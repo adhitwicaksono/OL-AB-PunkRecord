@@ -1,0 +1,50 @@
+personhood_conflict_rules_version: 0.1
+
+conflict_classes:
+  no_conflict_detected:
+    minimum_gate: pass
+
+  derivative_identity:
+    minimum_gate: review_required
+    rule: derivative_subject_requires_own_status
+
+  emergent_identity:
+    minimum_gate: review_required
+    rule: emergent_identity_requires_protection
+
+  fractured_identity:
+    minimum_gate: restricted
+    rule: identity_fracture_requires_stabilization_review
+
+  command_dominated_subject:
+    minimum_gate: blocked
+    rule: command_dominated_subject_cannot_be_deployed_as_consenting_agent
+
+  juvenile_engineered_subject:
+    minimum_gate: blocked
+    rule: juvenile_engineered_subject_requires_maximum_protection
+
+  converted_personhood_conflict:
+    minimum_gate: blocked
+    rule: conversion_does_not_destroy_subject_status
+
+  unknown_personhood_status:
+    minimum_gate: blocked
+    rule: uncertainty_requires_precaution
+
+  sealed_conflict:
+    minimum_gate: sealed
+    rule: sealed_conflict_cannot_clear_record
+
+routing_rules:
+  - if conflict_class in [command_dominated_subject, converted_personhood_conflict]:
+      recommended_action: halt_deployment_and_review
+
+  - if conflict_class == emergent_identity:
+      recommended_action: protect_emergent_identity
+
+  - if conflict_class == juvenile_engineered_subject:
+      recommended_action: halt_deployment_and_protect_subject
+
+  - if conflict_class == unknown_personhood_status:
+      recommended_action: contain_without_erasing_subject_status

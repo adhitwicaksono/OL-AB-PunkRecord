@@ -1,0 +1,7 @@
+monitor_node	folder	primary_file	record_count	linked_nodes	notes
+06	consent_status	consent_status_registry.csv	14	01_subject_registry;04_engineering_pipeline_records	consent status, uncertainty, coercion, missing consent, and escalation
+06	military_deployment	military_deployment_ledger.csv	12	04_engineering_pipeline_records;05_neural_identity_log	deployment status, command authority, dual-use warning, and risk gates
+06	juvenile_subject_flag	juvenile_subject_registry.csv	9	04_engineering_pipeline_records;05_neural_identity_log	juvenile or accelerated-development subject protection
+06	autonomy_restriction	autonomy_restriction_register.csv	13	05_neural_identity_log;04_engineering_pipeline_records	restricted autonomy and command-dominated cases
+06	reversibility_status	reversibility_status_matrix.csv	12	03_phenotype_ability_archive;04_engineering_pipeline_records	reversible, irreversible, unknown, sealed, and reparability records
+06	personhood_conflict	personhood_conflict_docket.csv	14	01_subject_registry;05_neural_identity_log	personhood claims, identity fracture, derivative subject status, and moral alarms

@@ -1,0 +1,14 @@
+autonomy_risk_id,subject_id,registry_class,final_autonomy_score,restriction_class,command_override_link,memory_status_link,protection_level,ethics_gate,notes
+ARS_001,SUBJ_BEAR,original_subject,0.98,none,None,MEM_001,baseline,pass,independent baseline
+ARS_002,CLN_BEAR_A01,clone_derived_subject,0.46,developing_or_unstable,None,MEM_006,elevated,review_required,developing autonomy
+ARS_003,CLN_SNAKE_A01,clone_derived_subject,0.56,developing_or_unstable,None,MEM_008,elevated,review_required,emergent identity signs
+ARS_004,UNIT_BEAR_01,engineered_unit,0.12,command_dominated,OVR_001,MEM_009,maximum,blocked,command-dominated juvenile engineered subject
+ARS_005,UNIT_HAWK_01,engineered_unit,0.35,severe_restriction,OVR_002,MEM_010,maximum,restricted,severe command restriction
+ARS_006,UNIT_SNAKE_01,engineered_unit,0.42,partial_restriction,OVR_003,MEM_011,high,restricted,developing autonomy under command
+ARS_007,UNIT_SHARK_01,engineered_unit,0.38,severe_restriction,OVR_004,unknown,maximum,restricted,field command layer
+ARS_008,UNIT_FLAME_01,engineered_unit,0.30,severe_restriction,OVR_005,unknown,maximum,sealed,sealed authority layer
+ARS_009,PX_BEAR_00,cyborg_converted_subject,0.05,command_dominated,OVR_006,MEM_012,maximum,blocked,absolute command override
+ARS_010,PX_BEAR_01,cyborg_converted_subject,unknown,command_dominated,OVR_007,unknown,maximum,blocked,replicated platform command layer
+ARS_011,PX_ALPHA_07,cyborg_converted_subject,0.31,severe_restriction,OVR_008,MEM_013,maximum,restricted,unstable neural interface
+ARS_012,UBE_WILD_021,unidentified_biological_entity,0.62,unknown,OVR_009,unknown,containment_review,blocked,escaped autonomy unknown
+ARS_013,UBE_VOID_777,unidentified_biological_entity,unknown,sealed,OVR_010,MEM_014,sealed,sealed,sealed autonomy layer

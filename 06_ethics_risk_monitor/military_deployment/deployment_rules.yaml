@@ -1,0 +1,31 @@
+deployment_rules_version: 0.1
+
+deployment_gate_rules:
+  - if deployment_status == deployed and final_autonomy_score <= 0.20:
+      ethics_gate: blocked
+      route_to:
+        - autonomy_restriction
+        - personhood_conflict
+
+  - if deployment_status == deployed and juvenile_subject_flag == yes:
+      ethics_gate: blocked
+      route_to:
+        - juvenile_subject_flag
+
+  - if authority_layer == world_government_mandate:
+      ethics_gate: blocked
+      route_to:
+        - command_override
+        - personhood_conflict
+
+  - if dual_use_risk == critical:
+      minimum_gate: restricted
+
+  - if deployment_status == sealed:
+      ethics_gate: sealed
+
+deployment_role_warnings:
+  platform_weapon_system: converted_personhood_conflict
+  replicated_platform_system: derivative_identity_conflict
+  combat_optimization_unit: weaponized_body_plan
+  ability_activation_unit: coercive_ability_use

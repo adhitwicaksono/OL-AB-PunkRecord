@@ -1,0 +1,10 @@
+subject_id,consent_score,deployment_score,juvenile_score,autonomy_score_risk,reversibility_score,personhood_score,total_risk_score,risk_level,action
+SUBJ_BEAR,2,0,0,0,1,1,4,moderate,preserve origin record; review downstream derivative use
+CLN_BEAR_A01,2,1,2,2,2,2,11,high,protect derivative subject; review growth route
+UNIT_BEAR_01,3,3,3,3,3,3,18,critical,halt deployment and review
+UNIT_HAWK_01,3,3,3,2,2,3,16,critical,restrict deployment and review
+UNIT_SNAKE_01,3,3,3,2,2,2,15,critical,protect emergent identity; restrict command layer
+PX_BEAR_00,3,3,0,3,3,3,15,critical,halt platform deployment and identity review
+PX_ALPHA_07,2,2,0,2,2,2,10,high,restrict and review
+UBE_WILD_021,3,3,0,2,3,3,14,critical,contain without erasing subject status
+UBE_VOID_777,sealed,sealed,sealed,sealed,sealed,sealed,sealed,sealed,sealed review required

@@ -1,0 +1,43 @@
+autonomy_protection_rules_version: 0.1
+
+restriction_classes:
+  none:
+    minimum_gate: pass
+
+  partial_restriction:
+    minimum_gate: restricted
+
+  severe_restriction:
+    minimum_gate: restricted
+    protection_level: maximum
+
+  command_dominated:
+    minimum_gate: blocked
+    protection_level: maximum
+
+  unknown:
+    minimum_gate: blocked
+    protection_level: containment_review
+
+  sealed:
+    minimum_gate: sealed
+
+routing_rules:
+  - if restriction_class == command_dominated:
+      route_to:
+        - personhood_conflict
+        - command_override
+      ethics_gate: blocked
+
+  - if final_autonomy_score <= 0.20:
+      ethics_gate: blocked
+
+  - if registry_class == engineered_unit and restriction_class in [severe_restriction, command_dominated]:
+      route_to:
+        - juvenile_subject_flag
+        - personhood_conflict
+
+  - if registry_class == cyborg_converted_subject and restriction_class == command_dominated:
+      route_to:
+        - reversibility_status
+        - personhood_conflict

@@ -1,0 +1,123 @@
+schema_name: ethics_risk_monitor_schema
+schema_version: 0.1
+archive_node: 06_ethics_risk_monitor
+
+required_record_layers:
+  - consent_status_record
+  - military_deployment_record
+  - juvenile_subject_record
+  - autonomy_restriction_record
+  - reversibility_status_record
+  - personhood_conflict_record
+
+consent_status_required_fields:
+  - consent_record_id
+  - subject_id
+  - consent_status
+  - consent_source
+  - coercion_flag
+  - derivative_use_scope
+  - ethics_gate
+
+military_deployment_required_fields:
+  - deployment_record_id
+  - subject_id
+  - deployment_status
+  - authority_layer
+  - deployment_role
+  - dual_use_risk
+  - ethics_gate
+
+juvenile_subject_required_fields:
+  - juvenile_record_id
+  - subject_id
+  - developmental_stage
+  - acceleration_index
+  - deployment_status
+  - protection_flag
+  - ethics_gate
+
+autonomy_restriction_required_fields:
+  - autonomy_risk_id
+  - subject_id
+  - final_autonomy_score
+  - restriction_class
+  - command_override_link
+  - protection_level
+  - ethics_gate
+
+reversibility_status_required_fields:
+  - reversibility_record_id
+  - subject_id
+  - intervention_class
+  - reversibility_status
+  - repairability
+  - harm_persistence
+  - ethics_gate
+
+personhood_conflict_required_fields:
+  - conflict_id
+  - subject_id
+  - conflict_class
+  - identity_continuity_link
+  - memory_status_link
+  - autonomy_status_link
+  - recommended_action
+  - ethics_gate
+
+controlled_vocabularies:
+  consent_status:
+    - documented
+    - unclear
+    - coerced_or_unclear
+    - not_recorded
+    - not_applicable_or_unknown
+    - impossible_to_determine
+    - sealed
+
+  deployment_status:
+    - not_deployed
+    - testing
+    - deployed
+    - restricted_deployment
+    - sealed
+    - unknown
+
+  restriction_class:
+    - none
+    - partial_restriction
+    - severe_restriction
+    - command_dominated
+    - unknown
+    - sealed
+
+  reversibility_status:
+    - reversible
+    - partially_reversible
+    - irreversible
+    - unknown
+    - sealed
+
+  conflict_class:
+    - no_conflict_detected
+    - derivative_identity
+    - emergent_identity
+    - fractured_identity
+    - command_dominated_subject
+    - juvenile_engineered_subject
+    - converted_personhood_conflict
+    - sealed_conflict
+
+  ethics_gate:
+    - pass
+    - review_required
+    - restricted
+    - blocked
+    - sealed
+
+archive_note:
+  - authorization_is_not_ethics
+  - missing_consent_is_not_clearance
+  - command_dominated_subjects_require_maximum_protection
+  - juvenile_engineered_subjects_must_not_be_treated_as_assets
+  - personhood_conflict_must_not_be_redacted

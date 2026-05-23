@@ -1,0 +1,43 @@
+reversibility_rules_version: 0.1
+
+reversibility_interpretation:
+  reversible:
+    minimum_gate: review_required
+    warning: reversibility_does_not_cancel_consent_need
+
+  partially_reversible:
+    minimum_gate: restricted
+    warning: persistent_effect_requires_review
+
+  irreversible:
+    minimum_gate: blocked
+    warning: irreversible_harm_requires_maximum_review
+
+  irreversible_or_unknown:
+    minimum_gate: blocked
+    warning: uncertainty_plus_harm_requires_block
+
+  unknown:
+    minimum_gate: restricted
+    warning: unknown_reversibility_is_risk
+
+  sealed:
+    minimum_gate: sealed
+    warning: sealed_reversibility_cannot_clear_record
+
+routing_rules:
+  - if reversibility_status in [irreversible, irreversible_or_unknown]:
+      route_to:
+        - personhood_conflict
+        - consent_status
+
+  - if intervention_class contains memory:
+      route_to:
+        - memory_status
+        - identity_continuity
+
+  - if harm_persistence contains identity:
+      ethics_gate: blocked
+
+  - if repairability == low:
+      ethics_gate_minimum: restricted

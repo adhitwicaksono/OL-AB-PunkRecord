@@ -1,0 +1,20 @@
+OL-AB PUNK RECORD // ETHICS & RISK MONITOR GATE
+
+> request access: 06_ethics_risk_monitor
+> credential layer: public-node
+> gate response: partial access granted
+
+ACTIVE SUBNODES:
+[01] consent_status
+[02] military_deployment
+[03] juvenile_subject_flag
+[04] autonomy_restriction
+[05] reversibility_status
+[06] personhood_conflict
+
+SYSTEM NOTICE:
+Ethics & Risk Monitor receives escalation signals from all archive nodes.
+
+WARNING:
+This node does not treat World Government authorization as ethical clearance.
+This node preserves conflict even when administrative layers attempt to redact it.

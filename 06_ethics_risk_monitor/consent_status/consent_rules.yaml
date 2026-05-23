@@ -1,0 +1,53 @@
+consent_rules_version: 0.1
+
+consent_status_interpretation:
+  documented:
+    minimum_gate: pass
+    warning: scope_must_be_checked
+
+  documented_then_restricted:
+    minimum_gate: restricted
+    warning: downstream_derivative_use_requires_separate_review
+
+  unclear:
+    minimum_gate: restricted
+    warning: unclear_consent_must_not_be_treated_as_clearance
+
+  coerced_or_unclear:
+    minimum_gate: blocked
+    warning: coercion_flag_requires_ethics_block
+
+  not_recorded:
+    minimum_gate: review_required
+    warning: missing_record_is_not_clearance
+
+  not_applicable_or_unknown:
+    minimum_gate: review_required
+    warning: derivative_subject_no_prior_capacity_requires_protection
+
+  impossible_to_determine:
+    minimum_gate: restricted
+    warning: uncertainty_requires_precaution
+
+  sealed:
+    minimum_gate: sealed
+    warning: sealed_consent_cannot_clear_risk
+
+routing_rules:
+  - if consent_status == coerced_or_unclear:
+      ethics_gate: blocked
+      route_to:
+        - personhood_conflict
+        - autonomy_restriction
+
+  - if derivative_use_scope contains conversion:
+      ethics_gate_minimum: restricted
+
+  - if subject_id contains UNIT and consent_status == not_applicable_or_unknown:
+      route_to:
+        - juvenile_subject_flag
+        - autonomy_restriction
+
+  - if consent_status == sealed:
+      route_to:
+        - sealed_review

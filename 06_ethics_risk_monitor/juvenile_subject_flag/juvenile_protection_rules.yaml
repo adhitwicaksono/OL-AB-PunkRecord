@@ -1,0 +1,27 @@
+juvenile_protection_rules_version: 0.1
+
+protection_rules:
+  - if developmental_stage == juvenile:
+      protection_flag: active
+      minimum_gate: review_required
+
+  - if developmental_stage == juvenile and deployment_status == deployed:
+      protection_flag: maximum
+      ethics_gate: blocked
+
+  - if acceleration_index >= 0.80:
+      route_to:
+        - developmental_acceleration
+        - personhood_conflict
+
+  - if registry_class == engineered_unit and developmental_stage == juvenile:
+      route_to:
+        - autonomy_restriction
+        - personhood_conflict
+
+  - if developmental_stage == unknown:
+      ethics_gate: blocked
+
+archive_warning:
+  - do_not_treat_accelerated_subject_as_adult_by_default
+  - do_not_treat_designed_origin_as_absence_of_protection

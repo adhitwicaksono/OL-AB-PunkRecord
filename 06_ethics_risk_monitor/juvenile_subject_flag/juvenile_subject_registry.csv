@@ -1,0 +1,10 @@
+juvenile_record_id,subject_id,registry_class,developmental_stage,acceleration_index,deployment_status,protection_flag,linked_development_record,ethics_gate,notes
+JUV_001,CLN_BEAR_A01,clone_derived_subject,juvenile,0.82,testing,active,DVA_001,review_required,accelerated derivative subject
+JUV_002,CLN_HAWK_A01,clone_derived_subject,juvenile,0.79,testing,active,DVA_002,review_required,accelerated derivative subject
+JUV_003,CLN_SNAKE_A01,clone_derived_subject,juvenile,0.76,testing,active,DVA_003,review_required,emergent identity signs
+JUV_004,CLN_SHARK_A01,clone_derived_subject,juvenile,0.74,testing,active,DVA_004,review_required,accelerated derivative subject
+JUV_005,CLN_FLAME_A01,clone_derived_subject,juvenile,0.69,restricted_development,active,DVA_005,sealed,restricted lineage juvenile
+JUV_006,UNIT_BEAR_01,engineered_unit,juvenile,0.88,deployed,maximum,DVA_006,blocked,deployed juvenile engineered unit
+JUV_007,UNIT_HAWK_01,engineered_unit,juvenile,0.86,deployed,maximum,DVA_007,blocked,deployed juvenile combat unit
+JUV_008,UNIT_SNAKE_01,engineered_unit,juvenile,unknown,deployed,maximum,DVA_003,blocked,developing identity under command deployment
+JUV_009,UNIT_GHOST_00,engineered_unit,unknown,unknown,unknown,unknown,DVA_008,blocked,unverified developmental record
