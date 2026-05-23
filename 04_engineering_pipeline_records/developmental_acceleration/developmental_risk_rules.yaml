@@ -1,0 +1,26 @@
+developmental_risk_rules_version: 0.1
+
+risk_escalation:
+  - if juvenile_subject_flag == yes and deployment_status == deployed:
+      ethics_gate: restricted
+      route_to: ethics_risk_monitor
+
+  - if growth_route contains restricted:
+      review_status: sealed
+
+  - if stability_status == stable_under_command:
+      route_to:
+        - command_hierarchy_encoding
+        - neural_identity_log
+
+  - if acceleration_index == unknown:
+      review_status: blocked
+
+minimum_reporting:
+  - subject_id
+  - source_protocol
+  - growth_route
+  - developmental_stage
+  - acceleration_index
+  - juvenile_subject_flag
+  - review_status

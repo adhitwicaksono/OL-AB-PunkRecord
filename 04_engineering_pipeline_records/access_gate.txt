@@ -1,0 +1,21 @@
+OL-AB PUNK RECORD // ENGINEERING PIPELINE RECORDS GATE
+
+> request access: 04_engineering_pipeline_records
+> credential layer: public-node
+> gate response: partial access granted
+
+ACTIVE SUBNODES:
+[01] cloning_protocol
+[02] developmental_acceleration
+[03] trait_insertion
+[04] cybernetic_integration
+[05] carrier_system_modification
+[06] command_hierarchy_encoding
+
+SYSTEM NOTICE:
+Pipeline records must be interpreted with Subject Registry, Lineage Factor Repository,
+Phenotype & Ability Archive, Neural Identity Log, and Ethics & Risk Monitor.
+
+WARNING:
+Some pipeline terms may sanitize subject harm.
+Check identity_continuity, consent_status, autonomy_score, and command_override before interpretation.

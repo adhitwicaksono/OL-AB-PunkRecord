@@ -1,0 +1,27 @@
+cybernetic_review_rules_version: 0.1
+
+critical_conditions:
+  - memory_impact == suppressed
+  - autonomy_impact == severe
+  - neural_access_level == deep
+  - replacement_level == extreme
+  - weapon_system != none
+
+routing_rules:
+  - if neural_access_level == deep:
+      route_to:
+        - neural_identity_log
+        - ethics_risk_monitor
+
+  - if memory_impact in [suppressed, erased]:
+      ethics_gate: blocked
+
+  - if weapon_system != none and autonomy_impact in [moderate, severe]:
+      ethics_gate: blocked
+
+  - if interface_type contains sealed:
+      ethics_gate: sealed
+
+archive_warning:
+  - do_not_record_conversion_as_equipment_only
+  - do_not_delete_pre_conversion_identity

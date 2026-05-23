@@ -1,0 +1,6 @@
+warning_id	insertion_id	subject_id	warning_type	severity	message
+OTW_001	TIN_002	UNIT_BEAR_01	autonomy_control	critical	autonomy-control marker detected
+OTW_002	TIN_006	UNIT_SNAKE_01	carrier_effect_uncertainty	high	ability-carrier output partly unresolved
+OTW_003	TIN_009	PX_BEAR_00	neural_identity_impact	critical	memory/autonomy suppression marker detected
+OTW_004	TIN_010	PX_BEAR_00	platform_integration	critical	bio-mechanical integration impacts personhood review
+OTW_005	TIN_011	UBE_GREEN_003	carrier_residue_reuse	critical	unstable residue use blocked

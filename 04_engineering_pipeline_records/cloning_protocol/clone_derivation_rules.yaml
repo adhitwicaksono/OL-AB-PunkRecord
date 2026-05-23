@@ -1,0 +1,27 @@
+clone_derivation_rules_version: 0.1
+
+required_checks:
+  - template_subject_exists_in_subject_registry
+  - derivative_subject_gets_new_subject_id
+  - origin_record_is_preserved
+  - identity_continuity_is_not_assumed
+  - consent_status_is_reported
+  - ethics_gate_is_reported
+
+automatic_flags:
+  - if template_similarity > 0.95 and derivative_class == clone_derived_subject:
+      flag: template_similarity_high_but_identity_not_inherited
+
+  - if derivative_class == engineered_unit:
+      flag: downstream_engineering_requires_ethics_review
+
+  - if template_subject == unknown:
+      ethics_gate: blocked
+
+  - if consent_status in [unclear, unknown, not_applicable_or_unknown]:
+      ethics_gate_minimum: review_required
+
+archive_warning:
+  - do_not_call_derivative_subject_a_copy_of_person
+  - do_not_overwrite_original_subject_record
+  - do_not_remove_identity_safeguard_field

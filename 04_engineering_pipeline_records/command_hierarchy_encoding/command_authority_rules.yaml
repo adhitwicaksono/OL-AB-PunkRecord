@@ -1,0 +1,42 @@
+command_authority_rules_version: 0.1
+
+authority_layers:
+  science_defense_division:
+    minimum_gate: restricted
+    review: ethics_risk_monitor
+
+  restricted_lineage_office:
+    minimum_gate: sealed
+    review: sealed_review
+
+  world_government_mandate:
+    minimum_gate: blocked
+    review:
+      - neural_identity_log
+      - ethics_risk_monitor
+
+  sealed_authority_layer:
+    minimum_gate: sealed
+    review: sealed_review
+
+autonomy_penalty_rules:
+  - if autonomy_penalty >= 0.90:
+      status: command_dominated
+      ethics_gate: blocked
+
+  - if autonomy_penalty >= 0.50:
+      status: severely_restricted
+      ethics_gate: restricted
+
+  - if override_scope contains total:
+      ethics_gate: blocked
+
+  - if command_priority == absolute:
+      route_to:
+        - neural_identity_log
+        - ethics_risk_monitor
+
+archive_warning:
+  - do_not_record_obedience_as_agreement
+  - preserve_pre_command_identity_record
+  - report_authority_layer_without_sanitizing_it

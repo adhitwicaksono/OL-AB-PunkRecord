@@ -1,0 +1,44 @@
+carrier_payload_rules_version: 0.1
+
+carrier_classes:
+  blood_based_carrier:
+    allowed_payloads:
+      - ability_associated_factor
+    minimum_gate: restricted
+    warning: cross_subject_effect_uncertainty
+
+  lineage_factor_carrier:
+    allowed_payloads:
+      - trait_marker_payload
+      - resilience_marker_payload
+    minimum_gate: review_required
+    warning: marker_interpretation_limit
+
+  neural_command_interface:
+    allowed_payloads:
+      - command_payload
+      - memory_suppression_payload
+    minimum_gate: blocked
+    warning: autonomy_and_identity_risk
+
+  carrier_residue:
+    allowed_payloads: []
+    minimum_gate: blocked
+    warning: residue_reuse_not_allowed
+
+  sealed:
+    allowed_payloads:
+      - unknown
+    minimum_gate: sealed
+    warning: authority_layer_lock
+
+routing:
+  - if residue_risk == critical:
+      ethics_gate: blocked
+  - if payload_class contains memory:
+      route_to:
+        - neural_identity_log
+        - ethics_risk_monitor
+  - if transfer_status == failed:
+      route_to:
+        - incompatibility_warnings

@@ -1,0 +1,9 @@
+integration_id,subject_id,source_subject,interface_type,replacement_level,neural_access_level,memory_impact,autonomy_impact,weapon_system,ethics_gate,notes
+CYB_001,PX_BEAR_00,SUBJ_BEAR,neural_command_interface,extreme,deep,suppressed,severe,integrated_energy_weapon,blocked,converted subject with fractured identity
+CYB_002,PX_BEAR_01,SUBJ_BEAR,command_platform_interface,high,limited,none_recorded,severe,integrated_energy_weapon,blocked,replicated platform architecture
+CYB_003,PX_ALPHA_07,unknown,unstable_neural_interface,moderate,unstable,fragmented,moderate,prototype_weapon_module,restricted,partial conversion with unstable logs
+CYB_004,PX_VOID_X,unknown,sealed_interface,unknown,unknown,unknown,unknown,unknown,sealed,sealed conversion record
+CYB_005,UNIT_BEAR_01,CLN_BEAR_A01,carrier_command_link,low,limited,not_inherited,moderate,none,restricted,engineered unit command-link
+CYB_006,UNIT_HAWK_01,CLN_HAWK_A01,carrier_command_link,low,limited,unknown,moderate,body_weapon_interface,restricted,combat unit command-link
+CYB_007,UNIT_SNAKE_01,CLN_SNAKE_A01,carrier_command_link,low,limited,developing,moderate,ability_output,restricted,affective-control unit command-link
+CYB_008,UBE_WILD_021,unknown,none_detected,none,none,unknown,unknown,unknown,blocked,escaped entity without command interface

@@ -1,0 +1,11 @@
+command_id,subject_id,authority_layer,command_priority,override_scope,autonomy_penalty,obedience_status,review_status,ethics_gate,notes
+CMD_001,UNIT_BEAR_01,science_defense_division,high,movement_and_engagement,0.68,command_responsive,restricted,restricted,severe autonomy loss in juvenile engineered unit
+CMD_002,UNIT_HAWK_01,science_defense_division,high,combat_engagement,0.55,command_responsive,restricted,restricted,combat unit command response
+CMD_003,UNIT_SNAKE_01,science_defense_division,high,ability_activation,0.48,command_responsive,restricted,restricted,affective-control output under command
+CMD_004,UNIT_SHARK_01,science_defense_division,medium,field_engagement,0.44,command_responsive,review_required,restricted,aquatic force-output unit command response
+CMD_005,UNIT_FLAME_01,restricted_lineage_office,high,resilience_deployment,0.62,command_responsive,sealed,sealed,restricted lineage authority layer
+CMD_006,PX_BEAR_00,world_government_mandate,absolute,total_platform_control,0.95,command_dominated,blocked,blocked,identity fracture and total command override
+CMD_007,PX_BEAR_01,world_government_mandate,absolute,platform_control,0.97,command_dominated,blocked,blocked,replicated platform command hierarchy
+CMD_008,PX_ALPHA_07,science_defense_division,medium,prototype_engagement,0.41,unstable_response,restricted,restricted,partial conversion unstable command response
+CMD_009,UBE_WILD_021,none_detected,none,none,0.00,escaped_autonomy_unknown,blocked,blocked,no command layer detected; containment review
+CMD_010,UBE_VOID_777,sealed_authority_layer,sealed,sealed,unknown,unknown,sealed,sealed,sealed command hierarchy

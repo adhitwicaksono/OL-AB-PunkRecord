@@ -1,0 +1,113 @@
+schema_name: engineering_pipeline_records_schema
+schema_version: 0.1
+archive_node: 04_engineering_pipeline_records
+
+required_record_layers:
+  - cloning_protocol_record
+  - developmental_acceleration_record
+  - trait_insertion_record
+  - cybernetic_integration_record
+  - carrier_system_modification_record
+  - command_hierarchy_record
+
+cloning_protocol_required_fields:
+  - protocol_id
+  - template_subject
+  - derivative_subject
+  - derivative_class
+  - template_similarity
+  - identity_safeguard
+  - consent_status
+  - ethics_gate
+
+developmental_acceleration_required_fields:
+  - acceleration_id
+  - subject_id
+  - growth_route
+  - developmental_stage
+  - acceleration_index
+  - stability_status
+  - juvenile_subject_flag
+  - review_status
+
+trait_insertion_required_fields:
+  - insertion_id
+  - subject_id
+  - target_trait
+  - linked_marker
+  - carrier_system
+  - expression_status
+  - off_target_warning
+  - ethics_gate
+
+cybernetic_integration_required_fields:
+  - integration_id
+  - subject_id
+  - interface_type
+  - replacement_level
+  - neural_access_level
+  - memory_impact
+  - autonomy_impact
+  - ethics_gate
+
+carrier_system_modification_required_fields:
+  - carrier_id
+  - carrier_system
+  - payload_class
+  - linked_ability
+  - stability_status
+  - residue_risk
+  - transfer_status
+  - ethics_gate
+
+command_hierarchy_required_fields:
+  - command_id
+  - subject_id
+  - authority_layer
+  - command_priority
+  - override_scope
+  - autonomy_penalty
+  - review_status
+  - ethics_gate
+
+controlled_vocabularies:
+  derivative_class:
+    - clone_derived_subject
+    - engineered_unit
+    - cyborg_converted_subject
+    - unidentified_biological_entity
+
+  ethics_gate:
+    - pass
+    - review_required
+    - restricted
+    - blocked
+    - sealed
+
+  review_status:
+    - accepted
+    - review_required
+    - restricted
+    - blocked
+    - sealed
+
+  stability_status:
+    - stable
+    - stable_under_command
+    - unstable
+    - failed
+    - unknown
+    - sealed
+
+  memory_impact:
+    - none
+    - not_inherited
+    - fragmented
+    - suppressed
+    - erased
+    - unknown
+
+archive_note:
+  - pipeline_records_are_metadata_not_lab_instructions
+  - high_technical_success_does_not_override_subject_rights
+  - command_hierarchy_must_be_reported_as_autonomy_risk

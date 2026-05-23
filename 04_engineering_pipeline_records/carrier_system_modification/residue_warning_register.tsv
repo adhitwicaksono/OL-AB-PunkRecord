@@ -1,0 +1,7 @@
+residue_id	carrier_mod_id	carrier_system	residue_type	severity	message
+RES_001	CSM_003	blood_based_carrier	unstable_effect_residue	high	partial transfer leaves unstable carrier signature
+RES_002	CSM_005	lineage_factor_carrier	restricted_marker_residue	high	restricted resilience marker cannot be recycled
+RES_003	CSM_006	neural_command_interface	command_payload_residue	critical	command carrier cannot be reused
+RES_004	CSM_007	neural_command_interface	memory_suppression_residue	critical	memory-impact carrier requires destruction or sealed review
+RES_005	CSM_008	carrier_residue	ability_residue	critical	residue reuse blocked
+RES_006	CSM_009	unstable_body_form_carrier	form_switching_residue	critical	unstable body-form residue blocked

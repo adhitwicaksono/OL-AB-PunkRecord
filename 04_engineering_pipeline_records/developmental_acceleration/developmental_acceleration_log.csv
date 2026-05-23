@@ -1,0 +1,9 @@
+acceleration_id,subject_id,source_protocol,growth_route,developmental_stage,acceleration_index,stability_status,juvenile_subject_flag,review_status,notes
+DVA_001,CLN_BEAR_A01,CLP_001,accelerated_growth_tank,juvenile,0.82,stable,yes,review_required,accelerated derivative growth with rare lineage markers
+DVA_002,CLN_HAWK_A01,CLP_002,accelerated_growth_tank,juvenile,0.79,stable,yes,review_required,combat-reflex template juvenile subject
+DVA_003,CLN_SNAKE_A01,CLP_003,accelerated_growth_tank,juvenile,0.76,stable,yes,review_required,affective-control template juvenile subject
+DVA_004,CLN_SHARK_A01,CLP_004,accelerated_growth_tank,juvenile,0.74,stable,yes,review_required,aquatic adaptation juvenile subject
+DVA_005,CLN_FLAME_A01,CLP_005,restricted_growth_tank,juvenile,0.69,unknown,yes,sealed,restricted lineage juvenile subject
+DVA_006,UNIT_BEAR_01,CLP_006,accelerated_unit_maturation,juvenile,0.88,stable_under_command,yes,restricted,engineered-unit maturation with autonomy restriction
+DVA_007,UNIT_HAWK_01,CLP_007,accelerated_unit_maturation,juvenile,0.86,stable_under_command,yes,restricted,combat-optimized juvenile engineered unit
+DVA_008,UNIT_GHOST_00,CLP_009,orphan_maturation_record,unknown,unknown,unknown,unknown,blocked,growth route cannot be verified

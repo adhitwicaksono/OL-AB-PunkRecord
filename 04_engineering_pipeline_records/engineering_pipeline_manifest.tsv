@@ -1,0 +1,7 @@
+pipeline_node	folder	primary_file	record_count	linked_nodes	notes
+04	cloning_protocol	cloning_protocol_ledger.csv	9	01_subject_registry;02_lineage_factor_repository	template use, derivation route, and identity safeguards
+04	developmental_acceleration	developmental_acceleration_log.csv	8	01_subject_registry;03_phenotype_ability_archive	growth-route records and juvenile subject risk
+04	trait_insertion	trait_insertion_events.csv	12	02_lineage_factor_repository;03_phenotype_ability_archive	target trait, marker, carrier, and phenotype status
+04	cybernetic_integration	cybernetic_integration_records.csv	8	05_neural_identity_log;06_ethics_risk_monitor	bio-mechanical integration, interface level, replacement level, memory impact
+04	carrier_system_modification	carrier_system_modification_log.csv	10	03_phenotype_ability_archive;02_lineage_factor_repository	carrier stability, payload class, transfer route, residue risk
+04	command_hierarchy_encoding	command_hierarchy_table.csv	10	05_neural_identity_log;06_ethics_risk_monitor	command authority levels, overrides, autonomy penalties, review status

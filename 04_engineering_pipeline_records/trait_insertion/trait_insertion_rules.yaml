@@ -1,0 +1,31 @@
+trait_insertion_rules_version: 0.1
+
+blocked_markers:
+  - LF_CONTROL_lowautonomy
+  - LF_NEURAL_suppression
+  - LF_PLATFORM_integration
+
+restricted_markers:
+  - LF_DURABILITY_plus
+  - LF_BLADE_interface
+  - LF_AFFECT_signal
+  - LF_THERMAL_boundary
+
+routing_rules:
+  - if linked_marker in blocked_markers:
+      ethics_gate: blocked
+      route_to:
+        - neural_identity_log
+        - ethics_risk_monitor
+
+  - if off_target_warning == critical:
+      ethics_gate: blocked
+
+  - if carrier_system == carrier_residue:
+      ethics_gate: blocked
+
+  - if carrier_system == sealed:
+      ethics_gate: sealed
+
+reporting_rule:
+  - expression_status_must_not_be_reported_without_ethics_gate
