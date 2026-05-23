@@ -1,160 +1,386 @@
 # OL-AB Punk Record
 
-> **A fictional bioinformatics archive for lineage-factor research, engineered bodies, artificial abilities, and posthuman biology.**
+```text
+╔══════════════════════════════════════════════════════════════════╗
+║                    OL-AB PUNK RECORD                            ║
+║              LINEAGE FACTOR ARCHIVE GATEWAY                     ║
+║                 EGGHEAD ACCESS LAYER // v0.1                    ║
+╚══════════════════════════════════════════════════════════════════╝
+```
 
-Welcome to **OL-AB Punk Record**, a prototype biological information system designed to catalog experimental subjects, lineage-factor profiles, engineered phenotypes, artificial abilities, clone-derived identities, cybernetic modifications, neural identity records, and ethical risk flags.
+```text
+> booting archive gateway...
+> loading subject registry...
+> linking lineage-factor repository...
+> indexing engineered-unit records...
+> scanning ability-transfer logs...
+> mounting neural identity archive...
+> initializing ethics and risk monitor...
 
-This repository imagines how a high-level biotechnology research facility might organize biological data when life itself becomes readable, editable, transferable, programmable, and politically dangerous.
+ACCESS STATUS : LIMITED PUBLIC NODE
+ARCHIVE CLASS : BIOLOGICAL INTELLIGENCE RECORD
+WARNING       : SELECTED RECORDS MAY CONTAIN PERSONHOOD CONFLICTS
+```
+
+Welcome to **OL-AB Punk Record**, a biological information gateway for lineage-factor research, engineered bodies, artificial abilities, clone-derived identities, cybernetic modification, neural identity records, and ethics-risk flags.
+
+This archive is built around one operational assumption:
+
+> **Life is not only something to be observed. Life can be read, annotated, altered, inherited, transferred, and controlled.**
+
+The problem is that once living beings become data, the database must record more than sequence.
+
+It must record identity.
+
+It must record consent.
+
+It must record memory.
+
+It must record suffering.
+
+It must record whether an engineered subject is a tool, a weapon, a patient, a child, a citizen, or a person.
 
 ---
 
-## Access Level
+## 0. Gateway Command
+
+```bash
+olab-punkrecord open --node egghead --access public
+```
+
+Expected gateway response:
 
 ```text
-SYSTEM        : OL-AB Punk Record
-ARCHIVE TYPE  : Fictional Bioinformatics Database
-STATUS        : Prototype / Educational Simulation
-DATA CLASS    : Synthetic, fictional, non-human-readable until annotated
-PRIMARY USE   : Science communication, biotechnology discussion, posthumanism mapping
-WARNING       : Engineered-life records may contain severe ethical anomalies
+[OK] Subject Registry mounted
+[OK] Lineage Factor Repository mounted
+[OK] Phenotype & Ability Archive mounted
+[OK] Engineering Pipeline Records mounted
+[OK] Neural Identity Log mounted
+[OK] Ethics & Risk Monitor mounted
+
+Active warning:
+Some engineered units contain incomplete autonomy records.
+Some subject histories contain memory-suppression events.
+Some ability-transfer records exceed known biological plausibility limits.
 ```
 
 ---
 
-## Core Question
+## 1. Core Question
 
 If biology becomes editable, what should be recorded?
 
-A simple genome database is not enough.
+A genome database is not enough.
 
 An engineered being is not only a sequence.  
-It is also a body, a history, a memory, a legal status, a social identity, and possibly a person.
+It is also a body, a history, a memory, a command structure, a legal status, a social identity, and possibly a person.
 
-**OL-AB Punk Record** treats fictional biotechnology as a thought experiment:
-
-> **Before asking whether we can engineer life, we must ask whether our database even knows what kind of life it is looking at.**
-
----
-
-## System Overview
-
-OL-AB Punk Record is organized around six major archives.
-
-### 1. Subject Registry
-
-Catalogs original individuals, clones, engineered units, cyborgs, experimental biological entities, and posthuman subjects.
-
-Example records may include:
-
-- original biological subjects
-- clone-derived subjects
-- engineered childlike units
-- cyborg-converted subjects
-- subjects with artificial ability transfer
-- subjects with altered autonomy or memory status
-
----
-
-### 2. Lineage Factor Repository
-
-Stores genome-like sequences, variant profiles, trait annotations, donor templates, biological compatibility metadata, and intervention history.
-
-In real biological terms, a "lineage factor" record may be imagined as a fictional composite of:
+**OL-AB Punk Record** asks:
 
 ```text
-genome + variants + epigenetic state + developmental program + phenotype metadata + intervention history
+Can a biological database detect when an experiment has crossed from research into dehumanization?
 ```
 
-Example data types:
+---
 
-- FASTA-like sequence records
-- VCF-like variant records
-- donor-template metadata
-- trait-associated annotations
-- compatibility scores
-- intervention logs
+## 2. Archive Architecture
+
+```text
+OL-AB PUNK RECORD
+│
+├── 01_subject_registry
+│   ├── original subjects
+│   ├── clone-derived subjects
+│   ├── engineered units
+│   ├── cyborg-converted subjects
+│   └── unidentified biological entities
+│
+├── 02_lineage_factor_repository
+│   ├── sequence records
+│   ├── variant profiles
+│   ├── donor-template metadata
+│   ├── trait-associated markers
+│   └── compatibility indices
+│
+├── 03_phenotype_ability_archive
+│   ├── observed traits
+│   ├── artificial abilities
+│   ├── body-state alteration
+│   ├── transfer events
+│   └── plausibility classification
+│
+├── 04_engineering_pipeline_records
+│   ├── cloning protocol
+│   ├── developmental acceleration
+│   ├── trait insertion
+│   ├── cybernetic integration
+│   ├── carrier-system modification
+│   └── command hierarchy encoding
+│
+├── 05_neural_identity_log
+│   ├── memory status
+│   ├── autonomy score
+│   ├── personality retention
+│   ├── command override
+│   └── identity continuity
+│
+└── 06_ethics_risk_monitor
+    ├── consent status
+    ├── military deployment
+    ├── juvenile subject flag
+    ├── autonomy restriction
+    ├── reversibility status
+    └── personhood conflict
+```
 
 ---
 
-### 3. Phenotype & Ability Archive
+## 3. Data Model
 
-Links observable traits, artificial abilities, body modifications, and biological plausibility scores.
+### 3.1 Subject Registry
 
-The archive separates fictional abilities into broad interpretive classes:
+The Subject Registry records biological origin, experimental status, and identity continuity.
 
-| Ability class | Description | Biological analogy | Plausibility |
-|---|---|---|---|
-| `zoan_like` | Body-form transformation | developmental reprogramming | very low |
-| `paramecia_like` | Specialized body property or external effect | tissue biomechanics / synthetic physiology | low to impossible |
-| `logia_like` | Elemental body-state transformation | mostly non-biological physics fantasy | impossible |
-| `transfer_like` | Ability transplantation or replication | gene therapy / cell therapy analogy | very low |
-| `cybernetic_like` | Biological-mechanical integration | prosthetics, neural interface, cyborg biology | partially plausible |
-
----
-
-### 4. Engineering Pipeline Records
-
-Tracks experimental interventions and their biological consequences.
-
-Possible pipeline modules:
-
-- cloning protocol
-- developmental acceleration
-- artificial trait insertion
-- cybernetic integration
-- artificial ability transfer
-- blood or carrier-system modification
-- command hierarchy encoding
-- biological stability monitoring
+```csv
+subject_id,subject_type,donor_template,status,identity_continuity,notes
+SUBJ_BEAR,original_human,None,archived,baseline,unusual lineage traits detected
+SUBJ_HAWK,original_human,None,archived,baseline,enhanced combat phenotype documented
+SUBJ_SNAKE,original_human,None,archived,baseline,affective-control phenotype documented
+UNIT_BEAR_01,engineered_unit,SUBJ_BEAR,active,disputed,clone-derived unit with suppressed autonomy
+UNIT_HAWK_01,engineered_unit,SUBJ_HAWK,active,disputed,clone-derived unit with combat optimization
+UNIT_SNAKE_01,engineered_unit,SUBJ_SNAKE,active,disputed,clone-derived unit with artificial ability phenotype
+PX_BEAR_00,cyborg_converted_subject,SUBJ_BEAR,deployed,fractured,biological subject converted into command-responsive platform
+```
 
 ---
 
-### 5. Neural Identity Log
+### 3.2 Lineage Factor Repository
 
-Records memory status, autonomy score, behavioral control layers, personality retention, and consciousness-related metadata.
+Lineage Factor records are treated as layered biological identity data.
 
-This archive asks whether a subject remains biologically alive, psychologically continuous, legally autonomous, and socially recognizable.
+```text
+lineage_factor_record =
+    sequence layer
+  + variant layer
+  + developmental layer
+  + phenotype layer
+  + intervention layer
+  + identity layer
+```
 
-Example fields:
+Example FASTA-style record:
 
-| Field | Meaning |
-|---|---|
-| `memory_status` | whether autobiographical memory is intact, fragmented, suppressed, or erased |
-| `autonomy_score` | rough index of independent decision-making capacity |
-| `command_override` | whether external command hierarchy exists |
-| `personality_retention` | whether the original personality remains detectable |
-| `identity_continuity` | whether the subject can plausibly be considered continuous with the original person |
+```fasta
+>SUBJ_BEAR|lineage_factor|baseline_record
+ATGCGTACCGTTAACGATCGATCGTACCGATCGATGCTAGCTAGGCTAACCGTATCG
+>UNIT_BEAR_01|lineage_factor|engineered_record
+ATGCGTACCGTTAACGATCGATCGTACCGATCGATGCTAGCTAGGCTAACCGTATTA
+```
+
+Example variant-style record:
+
+```vcf
+##fileformat=VCFv4.2
+##source=OL-AB_Punk_Record
+#CHROM POS ID REF ALT QUAL FILTER INFO
+LF01 60 LF_VAR_001 C T . PASS TRAIT=enhanced_durability;EFFECT=trait_marker
+LF01 61 LF_VAR_002 G A . PASS TRAIT=autonomy_restriction;EFFECT=control_marker
+```
 
 ---
 
-### 6. Ethics & Risk Monitor
+### 3.3 Phenotype & Ability Archive
 
-Flags consent issues, dual-use risk, autonomy restriction, biological instability, juvenile subject status, and posthuman personhood concerns.
+The Phenotype & Ability Archive links observed traits to biological analogies and plausibility levels.
 
-This module does not ask only:
+```csv
+ability_id,ability_name,ability_class,primary_effect,biological_analogy,plausibility_score
+ABL_REPULSE,repulsion-like ability,paramecia_like,force-like displacement of targets,mechanotransduction and biomechanics boundary case,very_low
+ABL_ELASTIC,elastic body phenotype,paramecia_like,extreme tissue elasticity,extracellular matrix and polymer biomechanics boundary case,very_low
+ABL_FIRE,fire-body phenotype,logia_like,combustion-like body state,non-biological body-state conversion,impossible
+ABL_ANIMAL_FORM,animal transformation,zoan_like,body plan conversion,developmental reprogramming boundary case,very_low
+ABL_PETRIFY,petrification-like effect,paramecia_like,body-state immobilization or mineralization,biomineralization boundary case,very_low
+```
 
-> "Did the experiment work?"
+Ability-class interpretation:
 
-It also asks:
+| Ability class | Archive interpretation | Biological discussion |
+|---|---|---|
+| `zoan_like` | body-form conversion | developmental reprogramming, body-plan constraints |
+| `paramecia_like` | specialized body property or external effect | tissue mechanics, signaling, synthetic physiology |
+| `logia_like` | elemental body-state conversion | outside biological plausibility |
+| `transfer_like` | ability replication or transplantation | gene therapy, cell therapy, carrier systems |
+| `cybernetic_like` | biological-mechanical integration | prosthetics, neural interface, biohybrid systems |
 
-> "Should this experiment have existed?"
+---
 
-Example risk categories:
+### 3.4 Engineering Pipeline Records
 
-- unclear consent
-- coerced consent
-- military deployment
-- memory/personality suppression
-- engineered childlike subject
+Engineering Pipeline Records document how a subject was modified.
+
+```csv
+pipeline_id,unit_id,intervention_type,input_template,carrier_system,development_stage,result_status
+PIPE_001,UNIT_BEAR_01,clone_derivation,SUBJ_BEAR,lineage_factor_carrier,juvenile,stable_but_restricted
+PIPE_002,UNIT_HAWK_01,combat_trait_optimization,SUBJ_HAWK,lineage_factor_carrier,juvenile,stable_but_restricted
+PIPE_003,UNIT_SNAKE_01,ability_transfer,SUBJ_SNAKE,blood_based_carrier,juvenile,stable_but_restricted
+PIPE_004,PX_BEAR_00,cyborg_conversion,SUBJ_BEAR,neural_command_interface,adult,deployed
+```
+
+---
+
+### 3.5 Neural Identity Log
+
+Neural Identity Log records are used when biological function and personhood no longer align cleanly.
+
+```csv
+record_id,subject_id,memory_status,autonomy_score,personality_retention,command_override,identity_continuity
+NIL_001,SUBJ_BEAR,intact,0.95,high,no,continuous
+NIL_002,PX_BEAR_00,suppressed,0.05,low,yes,fractured
+NIL_003,UNIT_BEAR_01,not_inherited,0.12,template_echo_only,yes,disputed
+NIL_004,UNIT_HAWK_01,not_inherited,0.35,template_echo_only,yes,disputed
+NIL_005,UNIT_SNAKE_01,developing,0.42,template_echo_only,yes,disputed
+```
+
+Autonomy scale:
+
+```text
+0.00 - 0.20 : command-dominated
+0.21 - 0.40 : severely restricted
+0.41 - 0.60 : unstable / developing autonomy
+0.61 - 0.80 : partial autonomy
+0.81 - 1.00 : independent autonomy
+```
+
+---
+
+### 3.6 Ethics & Risk Monitor
+
+The Ethics & Risk Monitor records conditions that should trigger immediate review.
+
+```csv
+record_id,unit_id,consent_status,military_use,autonomy_restriction,memory_modified,juvenile_subject,risk_level
+ETH_001,UNIT_BEAR_01,unknown,yes,yes,yes,yes,critical
+ETH_002,UNIT_HAWK_01,not_recorded,yes,yes,unknown,yes,high
+ETH_003,UNIT_SNAKE_01,not_recorded,yes,yes,unknown,yes,high
+ETH_004,PX_BEAR_00,coerced_or_unclear,yes,yes,yes,no,critical
+```
+
+Risk flags:
+
+```text
+LOW       : record complete, autonomy preserved, non-military use
+MODERATE  : intervention present, consent unclear, autonomy preserved
+HIGH      : engineered subject, restricted autonomy, deployment risk
+CRITICAL  : memory alteration, military use, restricted autonomy, personhood conflict
+```
+
+---
+
+## 4. Query Examples
+
+### 4.1 Query a Subject
+
+```bash
+python src/olab_punkrecord/query_subject.py --subject UNIT_BEAR_01
+```
+
+Expected output:
+
+```text
+Subject: UNIT_BEAR_01
+Template subject: SUBJ_BEAR
+Subject type: engineered_unit
+Added trait: enhanced_durability
+Ability class: repulsion_like
+Autonomy score: 0.12
+Memory status: not_inherited / suppressed-control context
+Development stage: juvenile
+Ethics flag: CRITICAL
+
+Recommended review:
+- posthuman personhood
+- biological consent
+- dual-use biotechnology
+- clone-derived identity
+- weaponization of engineered life
+```
+
+---
+
+### 4.2 Score Ethics Risk
+
+```bash
+python src/olab_punkrecord/score_ethics.py --unit UNIT_BEAR_01
+```
+
+Expected output:
+
+```text
+Subject: UNIT_BEAR_01
+
+Risk level: CRITICAL
+
+Detected concerns:
 - restricted autonomy
-- irreversible modification
-- biological instability
-- clone identity ambiguity
-- weaponization of living beings
+- memory/personality suppression in template-derived system
+- military deployment
+- unclear consent
+- juvenile engineered subject
+- engineered identity derived from original subject
+
+Review status:
+Immediate ethical review required.
+```
 
 ---
 
-## Suggested Repository Structure
+### 4.3 Classify an Ability
+
+```bash
+python src/olab_punkrecord/classify_ability.py --ability ABL_FIRE
+```
+
+Expected output:
+
+```text
+Ability: ABL_FIRE
+Class: logia_like
+Primary effect: combustion-like body state
+Biological analogy: non-biological body-state conversion
+Plausibility score: IMPOSSIBLE
+
+Archive note:
+This phenotype exceeds known biological mechanisms.
+Route to physics anomaly archive.
+```
+
+---
+
+### 4.4 Search for Personhood Conflict
+
+```bash
+python src/olab_punkrecord/search_risk.py \
+  --autonomy-below 0.40 \
+  --military-use yes \
+  --memory-modified yes
+```
+
+Expected output:
+
+```text
+3 records matched.
+
+PX_BEAR_00       risk=CRITICAL    autonomy=0.05    memory=suppressed
+UNIT_BEAR_01     risk=CRITICAL    autonomy=0.12    memory=not_inherited/control-linked
+UNIT_HAWK_01     risk=HIGH        autonomy=0.35    memory=unknown
+
+Archive warning:
+Restricted autonomy + military deployment + memory uncertainty indicates severe personhood conflict.
+```
+
+---
+
+## 5. Recommended Repository Structure
 
 ```text
 OL-AB_Punk_Record/
@@ -166,14 +392,15 @@ OL-AB_Punk_Record/
 ├── data/
 │   ├── subjects.csv
 │   ├── engineered_units.csv
-│   ├── fictional_abilities.csv
+│   ├── ability_registry.csv
 │   ├── trait_annotations.csv
 │   ├── ethics_registry.csv
+│   ├── neural_identity_log.csv
 │   ├── sample_lineage_factor.fasta
 │   └── lineage_factor_variants.vcf
 │
 ├── data/ontology/
-│   ├── fictional_biology_ontology.tsv
+│   ├── lineage_factor_ontology.tsv
 │   ├── ability_classes.tsv
 │   └── ethics_terms.tsv
 │
@@ -189,13 +416,14 @@ OL-AB_Punk_Record/
 │   ├── load_database.py
 │   ├── query_subject.py
 │   ├── score_ethics.py
-│   └── classify_ability.py
+│   ├── classify_ability.py
+│   └── search_risk.py
 │
 ├── docs/
 │   ├── database_schema.md
-│   ├── fictional_biology_mapping.md
+│   ├── lineage_factor_mapping.md
 │   ├── posthumanism_discussion_notes.md
-│   └── archive_note.md
+│   └── external_record.md
 │
 └── figures/
     ├── database_architecture.png
@@ -204,290 +432,169 @@ OL-AB_Punk_Record/
 
 ---
 
-## Example Data Tables
+## 6. Minimum Gateway Build
 
-### `data/subjects.csv`
-
-```csv
-subject_id,subject_type,donor_template,status,notes
-SUBJ_BEAR,original_human,None,archived,baseline biological subject with unusual lineage traits
-SUBJ_HAWK,original_human,None,archived,baseline subject associated with enhanced combat phenotype
-SUBJ_SNAKE,original_human,None,archived,baseline subject associated with affective-control phenotype
-UNIT_BEAR_01,engineered_unit,SUBJ_BEAR,active,clone-derived engineered unit with modified autonomy
-UNIT_HAWK_01,engineered_unit,SUBJ_HAWK,active,clone-derived engineered unit with combat optimization
-UNIT_SNAKE_01,engineered_unit,SUBJ_SNAKE,active,clone-derived engineered unit with artificial ability phenotype
-```
-
----
-
-### `data/engineered_units.csv`
-
-```csv
-unit_id,template_subject,added_trait,ability_class,autonomy_score,memory_status,development_stage,ethics_flag
-UNIT_BEAR_01,SUBJ_BEAR,enhanced_durability,repulsion_like,0.12,suppressed,juvenile,critical
-UNIT_HAWK_01,SUBJ_HAWK,enhanced_combat_reflex,blade_like,0.35,unknown,juvenile,high
-UNIT_SNAKE_01,SUBJ_SNAKE,affective_control,petrification_like,0.42,developing,juvenile,high
-```
-
----
-
-### `data/fictional_abilities.csv`
-
-```csv
-ability_id,ability_name,ability_class,primary_effect,biological_analogy,plausibility_score
-ABL_REPULSE,repulsion-like ability,paramecia_like,force-like displacement of targets,biomechanics and mechanotransduction fantasy,very_low
-ABL_ELASTIC,elastic body phenotype,paramecia_like,extreme tissue elasticity,extracellular matrix and polymer biomechanics fantasy,very_low
-ABL_FIRE,fire-body phenotype,logia_like,combustion-like body state,non-biological physics fantasy,impossible
-ABL_ANIMAL_FORM,animal transformation,zoan_like,body plan conversion,developmental reprogramming fantasy,very_low
-ABL_PETRIFY,petrification-like effect,paramecia_like,body-state immobilization or mineralization,biomineralization fantasy,very_low
-```
-
----
-
-### `data/ethics_registry.csv`
-
-```csv
-record_id,unit_id,consent_status,military_use,autonomy_restriction,memory_modified,juvenile_subject,risk_level
-ETH_001,UNIT_BEAR_01,unclear,yes,yes,yes,yes,critical
-ETH_002,UNIT_HAWK_01,not_applicable_or_unknown,yes,yes,unknown,yes,high
-ETH_003,UNIT_SNAKE_01,not_applicable_or_unknown,yes,yes,unknown,yes,high
-```
-
----
-
-## Example Synthetic Lineage-Factor Record
-
-### `data/sample_lineage_factor.fasta`
-
-```fasta
->SUBJ_BEAR|synthetic_lineage_factor|fictional_demo_sequence
-ATGCGTACCGTTAACGATCGATCGTACCGATCGATGCTAGCTAGGCTAACCGTATCG
->UNIT_BEAR_01|synthetic_lineage_factor|engineered_demo_sequence
-ATGCGTACCGTTAACGATCGATCGTACCGATCGATGCTAGCTAGGCTAACCGTATTA
-```
-
----
-
-## Example Variant Record
-
-### `data/lineage_factor_variants.vcf`
-
-```vcf
-##fileformat=VCFv4.2
-##source=OL-AB_Punk_Record_synthetic_demo
-#CHROM POS ID REF ALT QUAL FILTER INFO
-LF01 60 LF_VAR_001 C T . PASS TRAIT=enhanced_durability;EFFECT=fictional_trait_marker
-LF01 61 LF_VAR_002 G A . PASS TRAIT=autonomy_restriction;EFFECT=fictional_control_marker
-```
-
----
-
-## Example Query
-
-A future script may allow users to query engineered subjects:
-
-```bash
-python src/olab_punkrecord/query_subject.py --subject UNIT_BEAR_01
-```
-
-Expected output:
-
-```text
-Subject: UNIT_BEAR_01
-Template subject: SUBJ_BEAR
-Subject type: engineered_unit
-Added trait: enhanced_durability
-Ability class: repulsion_like
-Autonomy score: 0.12
-Memory status: suppressed
-Development stage: juvenile
-Ethics flag: CRITICAL
-
-Recommended discussion:
-- posthuman personhood
-- biological consent
-- dual-use biotechnology
-- clone-derived identity
-- weaponization of engineered life
-```
-
----
-
-## Example Ethics Risk Output
-
-A future ethics-scoring script may read metadata from `engineered_units.csv` and `ethics_registry.csv`.
-
-```bash
-python src/olab_punkrecord/score_ethics.py --unit UNIT_BEAR_01
-```
-
-Expected output:
-
-```text
-Subject: UNIT_BEAR_01
-
-Risk level: CRITICAL
-
-Detected concerns:
-- restricted autonomy
-- memory/personality suppression
-- military deployment
-- unclear consent
-- juvenile engineered subject
-- engineered identity derived from original subject
-
-Recommended discussion:
-posthuman personhood, biological consent, dual-use biotechnology,
-clone identity, and weaponization of engineered life
-```
-
----
-
-## Fictional Biology Mapping
-
-This repository treats fictional biotechnology as a layered model.
-
-| Fictional concept | Possible scientific discussion |
-|---|---|
-| lineage factor | genome, epigenome, developmental program, cell identity |
-| engineered soldiers | genome editing, developmental engineering, enhancement, coercion |
-| clones | genetic identity vs personal identity |
-| artificial abilities | phenotype engineering, synthetic biology, impossible traits |
-| cyborg conversion | prosthetics, neural interface, biohybrid systems |
-| memory alteration | neuroscience, connectomics, identity, autonomy |
-| posthuman subjects | personhood, rights, consent, governance |
-
----
-
-## Why Bioinformatics Matters Here
-
-Before biology can be engineered, it must be read.
-
-A fictional biotechnology empire would not only need wet-lab scientists. It would need:
-
-- sequence databases
-- variant annotation
-- phenotype ontologies
-- subject metadata
-- intervention tracking
-- risk scoring
-- lineage comparison
-- biological plausibility assessment
-- reproducibility logs
-- ethics and governance records
-
-In short:
-
-> **No database, no biotechnology empire.**
-
-And perhaps more importantly:
-
-> **No ethics layer, no trustworthy science.**
-
----
-
-## Notebook Ideas
-
-### `01_query_subject_database.ipynb`
-
-Demonstrates how to load subject metadata and query specific engineered units.
-
-### `02_trait_matching_demo.ipynb`
-
-Demonstrates how fictional traits can be linked to biological analogies such as extracellular matrix remodeling, developmental reprogramming, or neural control.
-
-### `03_clone_identity_demo.ipynb`
-
-Compares genetic identity, developmental history, memory status, and autonomy to show why a clone is not automatically the same person.
-
-### `04_ethics_risk_scoring.ipynb`
-
-Builds a simple toy scoring system for consent, autonomy, military deployment, memory modification, and juvenile subject status.
-
-### `05_ability_plausibility_classifier.ipynb`
-
-Classifies fictional abilities into categories such as biologically plausible, speculative, extremely unlikely, or physically impossible.
-
----
-
-## Minimum Viable Demo
-
-The first version of this repository can be very small:
+The first public node can run with only:
 
 ```text
 README.md
 data/
 ├── subjects.csv
 ├── engineered_units.csv
-├── fictional_abilities.csv
+├── ability_registry.csv
+├── neural_identity_log.csv
 └── ethics_registry.csv
 
 notebooks/
 └── 04_ethics_risk_scoring.ipynb
 ```
 
-With only these files, the archive can already demonstrate the main idea:
-
-> Biology is not only sequence data.  
-> Engineered life requires phenotype, identity, intervention, and ethics metadata.
-
----
-
-## Future Development
-
-Possible future modules:
-
-- toy phenotype ontology builder
-- trait-to-gene analogy table
-- synthetic lineage-factor FASTA generator
-- artificial ability plausibility classifier
-- clone identity comparison notebook
-- ethics risk dashboard
-- subject relationship network visualization
-- fictional biotechnology timeline
-- posthumanism discussion map
-
----
-
-## Archive Rules
-
-1. Do not treat fictional powers as real biological mechanisms.
-2. Do not reduce identity to DNA sequence.
-3. Do not describe clones as copies of persons.
-4. Do not ignore autonomy, consent, and personhood.
-5. Do not build a database that records power but forgets suffering.
-6. Do not let engineering language erase the subject.
-
----
-
-## Real-World Note
-
-This repository is an educational science communication project developed for a public discussion on fictional biotechnology, bioinformatics, and posthuman biology.
-
-It was prepared as a conceptual companion to the talk:
-
-**“One Piece & Bioteknologi: Ketika Fiksi Menyentuh Realitas”**
-
-The project is intended to help audiences explore how fictional concepts such as lineage factor, engineered bodies, cloning, artificial abilities, cybernetic modification, and posthuman identity can be connected to real scientific discussions in genomics, bioinformatics, synthetic biology, biotechnology ethics, and science communication.
-
-This repository is not affiliated with, endorsed by, or connected to any official franchise, publisher, animation studio, or rights holder.
-
-All fictional references are used only as conceptual inspiration for public science education.
-
----
-
-## Suggested Citation
-
-If you use or adapt this educational demo, please cite:
+This is enough to demonstrate the central archive logic:
 
 ```text
-Wicaksono, A. (2026). OL-AB Punk Record: A fictional bioinformatics archive for biotechnology and posthumanism science communication. Aether Biomics / OmicsLite educational demo.
+sequence data alone cannot describe engineered life
+```
+
+A subject record needs:
+
+```text
+origin + intervention + phenotype + memory + autonomy + risk
 ```
 
 ---
 
-## License
+## 7. Notebook Modules
 
-Recommended license: **MIT License** for code and **CC BY 4.0** for documentation and educational materials. 
+### `01_query_subject_database.ipynb`
 
-If fictional references are expanded further, keep the repository free of official images, manga panels, anime screenshots, copyrighted logos, or unauthorized character artwork.
+Loads subject metadata and retrieves engineered-unit records.
+
+### `02_trait_matching_demo.ipynb`
+
+Links unusual traits to biological analogies such as extracellular matrix remodeling, developmental reprogramming, neural control, or biohybrid integration.
+
+### `03_clone_identity_demo.ipynb`
+
+Compares genetic identity, developmental history, memory status, and autonomy.
+
+Central rule:
+
+```text
+same template ≠ same person
+```
+
+### `04_ethics_risk_scoring.ipynb`
+
+Scores metadata based on:
+
+- consent status
+- autonomy restriction
+- military deployment
+- memory modification
+- juvenile subject status
+- reversibility
+- personhood conflict
+
+### `05_ability_plausibility_classifier.ipynb`
+
+Classifies ability records into:
+
+```text
+plausible
+speculative
+very_low
+impossible
+```
+
+---
+
+## 8. Archive Rules
+
+```text
+RULE 01 : Do not reduce identity to sequence.
+RULE 02 : Do not describe clones as copies of persons.
+RULE 03 : Do not treat engineered children as equipment.
+RULE 04 : Do not hide military deployment under neutral laboratory language.
+RULE 05 : Do not erase consent from the metadata.
+RULE 06 : Do not let command hierarchy masquerade as autonomy.
+RULE 07 : Do not build a database that records power but forgets suffering.
+RULE 08 : Do not let engineering language erase the subject.
+```
+
+---
+
+## 9. Biological Translation Layer
+
+| Archive term | Scientific discussion |
+|---|---|
+| Lineage Factor | genome, epigenome, developmental program, cell identity |
+| Engineered unit | cloning, developmental engineering, enhancement, coercion |
+| Artificial ability | phenotype engineering, synthetic biology, biological impossibility |
+| Clone-derived identity | genetic similarity vs personal continuity |
+| Cybernetic conversion | prosthetics, neural interface, biohybrid system |
+| Memory suppression | neuroscience, connectomics, identity, autonomy |
+| Command hierarchy | behavioral control, governance, coercion |
+| Ethics flag | consent, risk, personhood, dual-use biotechnology |
+
+---
+
+## 10. Why Bioinformatics Matters
+
+Before biology can be engineered, it must be read.
+
+A high-level biotechnology archive requires:
+
+- sequence databases
+- variant annotation
+- phenotype ontologies
+- subject metadata
+- lineage comparison
+- intervention tracking
+- biological plausibility classification
+- reproducibility logs
+- identity continuity records
+- ethics and governance flags
+
+In short:
+
+```text
+NO DATABASE  → NO BIOTECHNOLOGY EMPIRE
+NO ETHICS    → NO TRUSTWORTHY SCIENCE
+```
+
+---
+
+## 11. Suggested Citation
+
+```text
+Wicaksono, A. (2026). OL-AB Punk Record: A lineage-factor archive gateway for biotechnology, bioinformatics, and posthumanism science communication. Aether Biomics / OmicsLite educational companion.
+```
+
+---
+
+## 12. External Rights Notice
+
+**One Piece** is a manga and anime franchise created by **Eiichiro Oda**. The manga is published by **Shueisha**, and the anime adaptation is produced by **Toei Animation**.
+
+Official Toei Animation pages list the copyright line as:
+
+```text
+©Eiichiro Oda/Shueisha, Toei Animation
+```
+
+The name **One Piece**, related characters, settings, concepts, and associated media belong to their respective rights holders.
+
+**OL-AB Punk Record** is an independently prepared educational companion for public science communication and discussion. It is not affiliated with, endorsed by, sponsored by, or connected to Eiichiro Oda, Shueisha, Toei Animation, or any official rights holder of the One Piece franchise.
+
+No official images, manga panels, anime screenshots, logos, or character artwork are included in this repository.
+
+---
+
+## 13. License
+
+Recommended license:
+
+```text
+Code: MIT License
+Documentation and educational materials: CC BY 4.0
+```
