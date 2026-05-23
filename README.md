@@ -2,9 +2,9 @@
 
 ```text
 ╔══════════════════════════════════════════════════════════════════╗
-║                    OL-AB PUNK RECORD                            ║
-║              LINEAGE FACTOR ARCHIVE GATEWAY                     ║
-║                 EGGHEAD ACCESS LAYER // v0.1                    ║
+║                    OL-AB PUNK RECORD                             ║
+║              LINEAGE FACTOR ARCHIVE GATEWAY                      ║
+║                 EGGHEAD ACCESS LAYER // v0.1                     ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
