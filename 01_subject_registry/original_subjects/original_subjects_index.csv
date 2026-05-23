@@ -1,0 +1,7 @@
+subject_id,registry_class,biological_origin,template_source,current_status,lineage_marker,primary_trait,autonomy_score,memory_status,consent_status,identity_continuity,ethics_risk,notes
+SUBJ_BEAR,original_subject,human_buccaneer_lineage_suspected,None,archived,LF_BUC_rare,extreme_endurance_and_body_scale,0.95,intact,documented_then_restricted,continuous,critical,baseline record later linked to conversion and template programs
+SUBJ_HAWK,original_subject,human,None,archived,LF_COMBAT_reflex,high_precision_combat_reflex,0.98,intact,not_recorded,continuous,moderate,baseline record linked to blade-type combat phenotype modeling
+SUBJ_SNAKE,original_subject,human,None,archived,LF_AFFECT_signal,affective_control_and_social_response,0.96,intact,not_recorded,continuous,moderate,baseline record linked to affective-control phenotype mapping
+SUBJ_SHARK,original_subject,fish_man_lineage,None,archived,LF_AQUA_adapt,aquatic_strength_and_pressure_tolerance,0.94,intact,not_recorded,continuous,moderate,baseline record linked to aquatic and biomechanical adaptation
+SUBJ_FLAME,original_subject,lunarian_lineage,None,restricted,LF_LUN_resilience,high_resilience_and_flame_associated_trait,0.90,unknown,unclear,continuous,critical,lineage record repeatedly accessed by engineered-unit pipeline
+SUBJ_VOID_ANCESTOR,original_subject,unknown_ancient_lineage,None,sealed,LF_VOID_unresolved,unresolved_ancestral_marker,unknown,unknown,impossible_to_determine,unknown,unknown,record sealed by external authority

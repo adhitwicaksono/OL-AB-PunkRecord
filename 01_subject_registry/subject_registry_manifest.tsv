@@ -1,0 +1,6 @@
+registry_node	folder	primary_file	record_count	risk_range	notes
+01	original_subjects	original_subjects_index.csv	6	low-critical	baseline individuals, donor templates, and unusual lineage markers
+02	clone_derived_subjects	clone_derived_subjects_index.csv	5	moderate-critical	template-derived individuals with identity-continuity concerns
+03	engineered_units	engineered_units_index.csv	6	high-critical	designed units with inserted traits, command structures, or ability systems
+04	cyborg_converted_subjects	cyborg_converted_subjects_index.csv	4	high-critical	biological subjects converted into integrated platforms
+05	unidentified_biological_entities	unidentified_entities_index.csv	5	unknown-critical	unstable, incomplete, anomalous, or unregistered entities

@@ -1,0 +1,6 @@
+subject_id,registry_class,biological_origin,template_source,current_status,clone_generation,growth_mode,autonomy_score,memory_status,consent_status,identity_continuity,ethics_risk,notes
+CLN_BEAR_A01,clone_derived_subject,template_derived,SUBJ_BEAR,dormant,G1,accelerated,0.28,not_inherited,not_applicable_or_unknown,template_echo_only,high,clone-derived body without inherited memory; autonomy restricted by design
+CLN_HAWK_A01,clone_derived_subject,template_derived,SUBJ_HAWK,active,G1,accelerated,0.39,not_inherited,not_applicable_or_unknown,template_echo_only,high,combat reflex markers enriched; personhood status disputed
+CLN_SNAKE_A01,clone_derived_subject,template_derived,SUBJ_SNAKE,active,G1,accelerated,0.44,developing,not_applicable_or_unknown,emergent,high,developing social response and affective-control traits
+CLN_SHARK_A01,clone_derived_subject,template_derived,SUBJ_SHARK,active,G1,accelerated,0.41,not_inherited,not_applicable_or_unknown,emergent,high,aquatic biomechanical traits expressed in juvenile-stage unit
+CLN_FLAME_A01,clone_derived_subject,template_derived,SUBJ_FLAME,restricted,G1,accelerated,0.33,unknown,not_applicable_or_unknown,disputed,critical,lineage-enhanced clone with resilience markers and restricted governance review

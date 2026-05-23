@@ -1,0 +1,20 @@
+OL-AB PUNK RECORD // SUBJECT REGISTRY GATE
+
+> request access: 01_subject_registry
+> credential layer: public-node
+> gate response: partial access granted
+
+ACTIVE SUBNODES:
+[01] original_subjects
+[02] clone_derived_subjects
+[03] engineered_units
+[04] cyborg_converted_subjects
+[05] unidentified_biological_entities
+
+SYSTEM NOTICE:
+Records in this node are linked to Lineage Factor Repository, Phenotype & Ability Archive,
+Neural Identity Log, and Ethics & Risk Monitor.
+
+WARNING:
+Subject records may contain administrative terms that understate personhood conflict.
+Check autonomy_score, memory_status, consent_status, and deployment_status before interpretation.

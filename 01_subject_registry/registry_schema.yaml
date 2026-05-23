@@ -1,0 +1,80 @@
+schema_name: subject_registry_schema
+schema_version: 0.1
+archive_node: 01_subject_registry
+
+required_fields:
+  - subject_id
+  - registry_class
+  - biological_origin
+  - template_source
+  - current_status
+  - autonomy_score
+  - memory_status
+  - consent_status
+  - identity_continuity
+  - ethics_risk
+
+controlled_vocabularies:
+  registry_class:
+    - original_subject
+    - clone_derived_subject
+    - engineered_unit
+    - cyborg_converted_subject
+    - unidentified_biological_entity
+
+  current_status:
+    - archived
+    - active
+    - deployed
+    - dormant
+    - escaped
+    - unknown
+    - sealed
+
+  memory_status:
+    - intact
+    - fragmented
+    - suppressed
+    - erased
+    - developing
+    - not_inherited
+    - unknown
+
+  consent_status:
+    - documented
+    - unclear
+    - coerced_or_unclear
+    - not_recorded
+    - not_applicable_or_unknown
+    - impossible_to_determine
+
+  identity_continuity:
+    - continuous
+    - fractured
+    - disputed
+    - template_echo_only
+    - emergent
+    - unknown
+
+  ethics_risk:
+    - low
+    - moderate
+    - high
+    - critical
+    - unknown
+
+autonomy_score:
+  type: float
+  minimum: 0.0
+  maximum: 1.0
+  interpretation:
+    "0.00-0.20": command-dominated
+    "0.21-0.40": severely restricted
+    "0.41-0.60": unstable_or_developing
+    "0.61-0.80": partial autonomy
+    "0.81-1.00": independent autonomy
+
+archive_note:
+  - same_template_does_not_mean_same_person
+  - deployment_status_does_not_override_personhood
+  - unknown_consent_must_be_treated_as_risk
