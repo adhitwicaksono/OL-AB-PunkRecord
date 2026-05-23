@@ -1,0 +1,20 @@
+OL-AB PUNK RECORD // NEURAL IDENTITY LOG GATE
+
+> request access: 05_neural_identity_log
+> credential layer: public-node
+> gate response: partial access granted
+
+ACTIVE SUBNODES:
+[01] memory_status
+[02] autonomy_score
+[03] personality_retention
+[04] command_override
+[05] identity_continuity
+
+SYSTEM NOTICE:
+Neural identity records must be interpreted with Subject Registry, Engineering Pipeline Records,
+Command Hierarchy Encoding, and Ethics & Risk Monitor.
+
+WARNING:
+Administrative labels may understate identity fracture.
+Check memory_status, autonomy_score, command_override, and identity_continuity before interpretation.

@@ -1,0 +1,11 @@
+override_id,subject_id,command_id,authority_layer,override_scope,override_depth,reversibility,linked_autonomy_record,ethics_gate,notes
+OVR_001,UNIT_BEAR_01,CMD_001,science_defense_division,movement_and_engagement,deep,partial_or_unknown,AUT_008,blocked,command-dominated autonomy score
+OVR_002,UNIT_HAWK_01,CMD_002,science_defense_division,combat_engagement,moderate,partial_or_unknown,AUT_009,restricted,severely restricted autonomy
+OVR_003,UNIT_SNAKE_01,CMD_003,science_defense_division,ability_activation,moderate,unknown,AUT_010,restricted,developing identity under ability activation command
+OVR_004,UNIT_SHARK_01,CMD_004,science_defense_division,field_engagement,moderate,unknown,AUT_011,restricted,field command layer
+OVR_005,UNIT_FLAME_01,CMD_005,restricted_lineage_office,resilience_deployment,deep,sealed,AUT_012,sealed,restricted lineage authority
+OVR_006,PX_BEAR_00,CMD_006,world_government_mandate,total_platform_control,absolute,unknown_or_irreversible,AUT_013,blocked,absolute command override
+OVR_007,PX_BEAR_01,CMD_007,world_government_mandate,platform_control,absolute,unknown_or_irreversible,None,blocked,replicated platform command layer
+OVR_008,PX_ALPHA_07,CMD_008,science_defense_division,prototype_engagement,moderate,unknown,AUT_014,restricted,unstable response
+OVR_009,UBE_WILD_021,CMD_009,none_detected,none,none,not_applicable,AUT_015,blocked,escaped autonomy unknown
+OVR_010,UBE_VOID_777,CMD_010,sealed_authority_layer,sealed,sealed,sealed,None,sealed,sealed override layer

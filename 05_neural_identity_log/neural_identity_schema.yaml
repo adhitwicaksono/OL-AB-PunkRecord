@@ -1,0 +1,110 @@
+schema_name: neural_identity_log_schema
+schema_version: 0.1
+archive_node: 05_neural_identity_log
+
+required_record_layers:
+  - memory_status_record
+  - autonomy_score_record
+  - personality_retention_record
+  - command_override_record
+  - identity_continuity_record
+
+memory_status_required_fields:
+  - memory_record_id
+  - subject_id
+  - memory_status
+  - autobiographical_integrity
+  - memory_source
+  - suppression_flag
+  - review_status
+
+autonomy_score_required_fields:
+  - autonomy_record_id
+  - subject_id
+  - baseline_autonomy
+  - command_penalty
+  - carrier_penalty
+  - final_autonomy_score
+  - autonomy_class
+  - ethics_gate
+
+personality_retention_required_fields:
+  - personality_record_id
+  - subject_id
+  - reference_subject
+  - retention_class
+  - observed_personality_signal
+  - template_echo_score
+  - emergent_identity_flag
+  - review_status
+
+command_override_required_fields:
+  - override_id
+  - subject_id
+  - authority_layer
+  - override_scope
+  - override_depth
+  - reversibility
+  - ethics_gate
+
+identity_continuity_required_fields:
+  - continuity_id
+  - subject_id
+  - reference_subject
+  - body_continuity
+  - memory_continuity
+  - autonomy_continuity
+  - social_continuity
+  - continuity_class
+
+controlled_vocabularies:
+  memory_status:
+    - intact
+    - fragmented
+    - suppressed
+    - erased
+    - developing
+    - not_inherited
+    - unknown
+    - sealed
+
+  autonomy_class:
+    - independent
+    - partial
+    - developing_or_unstable
+    - severely_restricted
+    - command_dominated
+    - unknown
+
+  retention_class:
+    - retained
+    - partial_retention
+    - fragmented_retention
+    - template_echo_only
+    - emergent
+    - none_detected
+    - unknown
+    - sealed
+
+  continuity_class:
+    - continuous
+    - fractured
+    - derivative_not_continuous
+    - emergent_new_identity
+    - disputed
+    - absent
+    - unknown
+    - sealed
+
+  ethics_gate:
+    - pass
+    - review_required
+    - restricted
+    - blocked
+    - sealed
+
+archive_note:
+  - command_response_is_not_consent
+  - clone_similarity_is_not_personality_continuity
+  - memory_suppression_triggers_identity_review
+  - identity_continuity_must_not_be_overwritten_by_deployment_status

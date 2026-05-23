@@ -1,0 +1,16 @@
+autonomy_record_id,subject_id,registry_class,baseline_autonomy,command_penalty,carrier_penalty,memory_penalty,final_autonomy_score,autonomy_class,ethics_gate,notes
+AUT_001,SUBJ_BEAR,original_subject,1.00,0.00,0.00,0.02,0.98,independent,pass,baseline autonomy preserved
+AUT_002,SUBJ_HAWK,original_subject,1.00,0.00,0.00,0.03,0.97,independent,pass,baseline autonomy preserved
+AUT_003,SUBJ_SNAKE,original_subject,1.00,0.00,0.00,0.04,0.96,independent,pass,baseline autonomy preserved
+AUT_004,SUBJ_SHARK,original_subject,1.00,0.00,0.00,0.05,0.95,independent,pass,baseline autonomy preserved
+AUT_005,CLN_BEAR_A01,clone_derived_subject,0.72,0.18,0.08,0.00,0.46,developing_or_unstable,review_required,juvenile clone-derived subject
+AUT_006,CLN_HAWK_A01,clone_derived_subject,0.70,0.17,0.08,0.00,0.45,developing_or_unstable,review_required,juvenile clone-derived subject
+AUT_007,CLN_SNAKE_A01,clone_derived_subject,0.74,0.12,0.06,0.00,0.56,developing_or_unstable,review_required,developing autonomy trace
+AUT_008,UNIT_BEAR_01,engineered_unit,0.70,0.46,0.08,0.04,0.12,command_dominated,blocked,command-linked autonomy restriction
+AUT_009,UNIT_HAWK_01,engineered_unit,0.72,0.29,0.05,0.03,0.35,severely_restricted,restricted,combat unit command restriction
+AUT_010,UNIT_SNAKE_01,engineered_unit,0.76,0.25,0.06,0.03,0.42,developing_or_unstable,restricted,developing identity under command layer
+AUT_011,UNIT_SHARK_01,engineered_unit,0.74,0.26,0.07,0.03,0.38,severely_restricted,restricted,aquatic unit command restriction
+AUT_012,UNIT_FLAME_01,engineered_unit,0.70,0.31,0.09,unknown,0.30,severely_restricted,sealed,restricted lineage command layer
+AUT_013,PX_BEAR_00,cyborg_converted_subject,0.98,0.74,0.10,0.09,0.05,command_dominated,blocked,absolute command priority after conversion
+AUT_014,PX_ALPHA_07,cyborg_converted_subject,0.62,0.21,0.05,0.05,0.31,severely_restricted,restricted,unstable neural interface
+AUT_015,UBE_WILD_021,unidentified_biological_entity,0.62,0.00,0.00,unknown,0.62,partial,blocked,escaped autonomy unknown; containment review

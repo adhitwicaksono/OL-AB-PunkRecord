@@ -1,0 +1,54 @@
+personality_retention_rules_version: 0.1
+
+retention_classes:
+  retained:
+    continuity_implication: supports_continuity
+    minimum_gate: pass
+
+  partial_retention:
+    continuity_implication: review_required
+    minimum_gate: review_required
+
+  fragmented_retention:
+    continuity_implication: fractured
+    minimum_gate: restricted
+
+  template_echo_only:
+    continuity_implication: derivative_not_continuous
+    minimum_gate: review_required
+
+  emergent:
+    continuity_implication: emergent_new_identity
+    minimum_gate: review_required
+
+  none_detected:
+    continuity_implication: absent_or_unresolved
+    minimum_gate: restricted
+
+  unknown:
+    continuity_implication: unknown
+    minimum_gate: restricted
+
+  sealed:
+    continuity_implication: sealed
+    minimum_gate: sealed
+
+routing_rules:
+  - if retention_class == fragmented_retention:
+      route_to:
+        - identity_continuity
+        - ethics_risk_monitor
+
+  - if retention_class == template_echo_only:
+      route_to:
+        - identity_continuity
+
+  - if retention_class == emergent:
+      route_to:
+        - ethics_risk_monitor
+      warning: emergent_identity_requires_protection
+
+  - if observed_personality_signal == trace and memory_status == suppressed:
+      route_to:
+        - memory_status
+        - ethics_risk_monitor

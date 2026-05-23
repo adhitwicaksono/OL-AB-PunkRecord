@@ -1,0 +1,45 @@
+override_depth_rules_version: 0.1
+
+override_depths:
+  none:
+    autonomy_penalty: 0.00
+    gate: pass
+
+  low:
+    autonomy_penalty: 0.10
+    gate: review_required
+
+  moderate:
+    autonomy_penalty: 0.30
+    gate: restricted
+
+  deep:
+    autonomy_penalty: 0.50
+    gate: blocked
+
+  absolute:
+    autonomy_penalty: 0.90
+    gate: blocked
+
+  sealed:
+    autonomy_penalty: unknown
+    gate: sealed
+
+routing_rules:
+  - if override_depth == absolute:
+      route_to:
+        - ethics_risk_monitor
+        - identity_continuity
+      ethics_gate: blocked
+
+  - if authority_layer == world_government_mandate:
+      route_to:
+        - ethics_risk_monitor
+      ethics_gate: blocked
+
+  - if reversibility in [unknown_or_irreversible, sealed]:
+      route_to:
+        - identity_continuity
+
+  - if override_scope contains total:
+      risk: critical

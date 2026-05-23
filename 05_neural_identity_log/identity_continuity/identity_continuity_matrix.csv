@@ -1,0 +1,17 @@
+continuity_id,subject_id,reference_subject,body_continuity,memory_continuity,autonomy_continuity,social_continuity,lineage_similarity,continuity_class,ethics_gate,notes
+IDC_001,SUBJ_BEAR,SUBJ_BEAR,yes,yes,yes,yes,1.000,continuous,pass,baseline identity continuity
+IDC_002,SUBJ_HAWK,SUBJ_HAWK,yes,yes,yes,yes,1.000,continuous,pass,baseline identity continuity
+IDC_003,SUBJ_SNAKE,SUBJ_SNAKE,yes,yes,yes,yes,1.000,continuous,pass,baseline identity continuity
+IDC_004,CLN_BEAR_A01,SUBJ_BEAR,no_derivative_body,no,developing,no,0.991,derivative_not_continuous,review_required,clone-derived subject is not original person
+IDC_005,CLN_HAWK_A01,SUBJ_HAWK,no_derivative_body,no,developing,no,0.988,derivative_not_continuous,review_required,template echo only
+IDC_006,CLN_SNAKE_A01,SUBJ_SNAKE,no_derivative_body,developing_new_memory,developing,emergent,0.986,emergent_new_identity,review_required,new identity emerging
+IDC_007,UNIT_BEAR_01,SUBJ_BEAR,no_derivative_engineered_body,no,severely_broken,no,0.963,disputed,blocked,command-dominated derivative unit
+IDC_008,UNIT_HAWK_01,SUBJ_HAWK,no_derivative_engineered_body,unknown,restricted,no,0.952,disputed,restricted,combat optimized derivative unit
+IDC_009,UNIT_SNAKE_01,SUBJ_SNAKE,no_derivative_engineered_body,developing_new_memory,restricted,emergent,0.949,emergent_new_identity,restricted,emergent identity under command layer
+IDC_010,UNIT_SHARK_01,SUBJ_SHARK,no_derivative_engineered_body,unknown,restricted,no,0.944,disputed,restricted,aquatic force-output derivative unit
+IDC_011,UNIT_FLAME_01,SUBJ_FLAME,no_derivative_engineered_body,unknown,sealed,sealed,0.902,sealed,sealed,restricted lineage subject
+IDC_012,PX_BEAR_00,SUBJ_BEAR,converted_same_body,suppressed,broken,fractured,0.781,fractured,blocked,converted platform with suppressed memory
+IDC_013,PX_BEAR_01,SUBJ_BEAR,replicated_platform_body,none_recorded,broken,no,unknown,derivative_not_continuous,blocked,replicated platform architecture
+IDC_014,PX_ALPHA_07,unknown,partial_converted_body,fragmented,restricted,unknown,unknown,unknown,restricted,unstable interface
+IDC_015,UBE_WILD_021,unknown,unknown,unknown,partial_or_unknown,emergent_possible,unknown,unknown,blocked,escaped entity requires review
+IDC_016,UBE_VOID_777,unknown,sealed,sealed,sealed,sealed,unknown,sealed,sealed,sealed identity-continuity record

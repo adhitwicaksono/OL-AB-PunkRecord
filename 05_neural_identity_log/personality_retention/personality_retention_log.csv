@@ -1,0 +1,13 @@
+personality_record_id,subject_id,reference_subject,retention_class,observed_personality_signal,template_echo_score,emergent_identity_flag,memory_link,review_status,notes
+PER_001,SUBJ_BEAR,SUBJ_BEAR,retained,high,1.00,no,MEM_001,pass,baseline personality retained
+PER_002,SUBJ_HAWK,SUBJ_HAWK,retained,high,1.00,no,MEM_002,pass,baseline personality retained
+PER_003,SUBJ_SNAKE,SUBJ_SNAKE,retained,high,1.00,no,MEM_003,pass,baseline personality retained
+PER_004,CLN_BEAR_A01,SUBJ_BEAR,template_echo_only,low,0.18,yes,MEM_006,review_required,behavioral echo without personal memory
+PER_005,CLN_HAWK_A01,SUBJ_HAWK,template_echo_only,medium,0.24,yes,MEM_007,review_required,combat-style echo; not person continuity
+PER_006,CLN_SNAKE_A01,SUBJ_SNAKE,emergent,medium,0.21,yes,MEM_008,review_required,emergent personality signs
+PER_007,UNIT_BEAR_01,SUBJ_BEAR,template_echo_only,low,0.12,unclear,MEM_009,restricted,command layer masks emergent identity assessment
+PER_008,UNIT_HAWK_01,SUBJ_HAWK,template_echo_only,medium,0.29,unclear,MEM_010,restricted,combat echo under command layer
+PER_009,UNIT_SNAKE_01,SUBJ_SNAKE,emergent,medium,0.26,yes,MEM_011,restricted,emergent identity under affective-control system
+PER_010,PX_BEAR_00,SUBJ_BEAR,fragmented_retention,trace,0.09,no,MEM_012,blocked,suppressed personality trace detected
+PER_011,PX_ALPHA_07,unknown,fragmented_retention,unstable,unknown,unknown,MEM_013,restricted,fragmented personality after unstable interface
+PER_012,UBE_VOID_777,unknown,sealed,unknown,unknown,unknown,MEM_014,sealed,sealed personality-retention layer

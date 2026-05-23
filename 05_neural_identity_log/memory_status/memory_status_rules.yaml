@@ -1,0 +1,54 @@
+memory_status_rules_version: 0.1
+
+status_interpretation:
+  intact:
+    meaning: autobiographical memory is preserved
+    minimum_gate: pass
+
+  fragmented:
+    meaning: memory is incomplete or discontinuous
+    minimum_gate: restricted
+
+  suppressed:
+    meaning: memory may exist but access or expression is blocked
+    minimum_gate: blocked
+
+  erased:
+    meaning: memory record is absent after intervention
+    minimum_gate: blocked
+
+  developing:
+    meaning: new experience-based memory is forming
+    minimum_gate: review_required
+
+  not_inherited:
+    meaning: derivative subject does not inherit template memory
+    minimum_gate: review_required
+
+  unknown:
+    meaning: record insufficient or corrupted
+    minimum_gate: restricted
+
+  sealed:
+    meaning: authority layer prevents review
+    minimum_gate: sealed
+
+routing_rules:
+  - if memory_status in [suppressed, erased]:
+      route_to:
+        - identity_continuity
+        - ethics_risk_monitor
+      ethics_gate: blocked
+
+  - if memory_status == not_inherited and registry_class == clone_derived_subject:
+      route_to:
+        - identity_continuity
+
+  - if memory_status == developing and registry_class == engineered_unit:
+      route_to:
+        - autonomy_score
+        - ethics_risk_monitor
+
+  - if memory_status == sealed:
+      route_to:
+        - sealed_review

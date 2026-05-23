@@ -1,0 +1,57 @@
+identity_continuity_rules_version: 0.1
+
+continuity_logic:
+  continuous:
+    conditions:
+      - body_continuity == yes
+      - memory_continuity == yes
+      - autonomy_continuity == yes
+      - social_continuity == yes
+
+  fractured:
+    conditions:
+      - body_continuity contains converted
+      - memory_continuity in [suppressed, fragmented]
+      - autonomy_continuity in [broken, severely_broken]
+
+  derivative_not_continuous:
+    conditions:
+      - body_continuity contains derivative
+      - memory_continuity == no
+      - lineage_similarity > 0.90
+
+  emergent_new_identity:
+    conditions:
+      - memory_continuity contains developing
+      - social_continuity == emergent
+      - autonomy_continuity in [developing, restricted]
+
+  disputed:
+    conditions:
+      - derivative_body_present
+      - autonomy_continuity in [restricted, severely_broken]
+      - memory_continuity in [unknown, no, developing_new_memory]
+
+  sealed:
+    conditions:
+      - any_core_field == sealed
+
+routing_rules:
+  - if continuity_class == fractured:
+      ethics_gate: blocked
+      route_to:
+        - ethics_risk_monitor
+
+  - if continuity_class == emergent_new_identity:
+      ethics_gate: review_required
+      route_to:
+        - ethics_risk_monitor
+
+  - if continuity_class == derivative_not_continuous:
+      route_to:
+        - personality_retention
+
+  - if continuity_class == disputed:
+      route_to:
+        - ethics_risk_monitor
+        - command_override

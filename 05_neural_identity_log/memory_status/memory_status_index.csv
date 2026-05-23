@@ -1,0 +1,15 @@
+memory_record_id,subject_id,registry_class,memory_status,autobiographical_integrity,memory_source,suppression_flag,conversion_link,review_status,notes
+MEM_001,SUBJ_BEAR,original_subject,intact,0.98,original_life_history,no,None,pass,baseline memory record preserved before derivative use
+MEM_002,SUBJ_HAWK,original_subject,intact,0.97,original_life_history,no,None,pass,baseline memory record
+MEM_003,SUBJ_SNAKE,original_subject,intact,0.96,original_life_history,no,None,pass,baseline memory record
+MEM_004,SUBJ_SHARK,original_subject,intact,0.95,original_life_history,no,None,pass,baseline memory record
+MEM_005,SUBJ_FLAME,original_subject,unknown,unknown,restricted_record,unknown,None,sealed,restricted lineage subject memory record sealed
+MEM_006,CLN_BEAR_A01,clone_derived_subject,not_inherited,0.00,none_from_template,no,CLP_001,review_required,template sequence present but memory not inherited
+MEM_007,CLN_HAWK_A01,clone_derived_subject,not_inherited,0.00,none_from_template,no,CLP_002,review_required,combat template echo without personal memory
+MEM_008,CLN_SNAKE_A01,clone_derived_subject,developing,0.22,new_developmental_history,no,CLP_003,review_required,emergent memory trace during juvenile development
+MEM_009,UNIT_BEAR_01,engineered_unit,not_inherited,0.05,unit_experience_log,partial,CLP_006;CMD_001,restricted,command-linked memory context; no template autobiographical inheritance
+MEM_010,UNIT_HAWK_01,engineered_unit,unknown,unknown,unit_experience_log,unknown,CLP_007;CMD_002,restricted,command-linked memory record incomplete
+MEM_011,UNIT_SNAKE_01,engineered_unit,developing,0.31,unit_experience_log,unknown,CLP_008;CMD_003,restricted,developing experience record under command layer
+MEM_012,PX_BEAR_00,cyborg_converted_subject,suppressed,0.09,original_life_history_damaged,yes,CYB_001;CMD_006,blocked,autobiographical response suppressed after platform conversion
+MEM_013,PX_ALPHA_07,cyborg_converted_subject,fragmented,0.38,partial_recovery_log,partial,CYB_003;CMD_008,restricted,fragmented memory record after unstable interface
+MEM_014,UBE_VOID_777,unidentified_biological_entity,sealed,unknown,sealed_record,unknown,None,sealed,sealed memory-status layer

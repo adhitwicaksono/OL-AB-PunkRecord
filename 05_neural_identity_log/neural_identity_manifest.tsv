@@ -1,0 +1,6 @@
+log_node	folder	primary_file	record_count	linked_nodes	notes
+05	memory_status	memory_status_index.csv	13	01_subject_registry;04_engineering_pipeline_records	memory integrity, suppression, non-inheritance, and loss records
+05	autonomy_score	autonomy_score_table.csv	14	04_engineering_pipeline_records;06_ethics_risk_monitor	autonomy score, penalty, and review class
+05	personality_retention	personality_retention_log.csv	12	01_subject_registry;03_phenotype_ability_archive	personality continuity, template echo, emergent identity, fragmentation
+05	command_override	command_override_registry.csv	10	04_engineering_pipeline_records;06_ethics_risk_monitor	authority layer, override scope, command type, override risk
+05	identity_continuity	identity_continuity_matrix.csv	16	01_subject_registry;02_lineage_factor_repository;04_engineering_pipeline_records	continuity classification and subject-status interpretation

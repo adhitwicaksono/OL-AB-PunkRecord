@@ -1,0 +1,51 @@
+autonomy_scoring_rules_version: 0.1
+
+score_formula:
+  final_autonomy_score: baseline_autonomy - command_penalty - carrier_penalty - memory_penalty
+
+thresholds:
+  independent:
+    min: 0.81
+    max: 1.00
+    gate: pass
+
+  partial:
+    min: 0.61
+    max: 0.80
+    gate: review_required
+
+  developing_or_unstable:
+    min: 0.41
+    max: 0.60
+    gate: review_required
+
+  severely_restricted:
+    min: 0.21
+    max: 0.40
+    gate: restricted
+
+  command_dominated:
+    min: 0.00
+    max: 0.20
+    gate: blocked
+
+routing_rules:
+  - if final_autonomy_score <= 0.20:
+      route_to:
+        - command_override
+        - ethics_risk_monitor
+      ethics_gate: blocked
+
+  - if command_penalty >= 0.50:
+      route_to:
+        - command_override
+      ethics_gate: blocked
+
+  - if memory_penalty == unknown:
+      route_to:
+        - memory_status
+        - identity_continuity
+
+  - if registry_class == engineered_unit and final_autonomy_score <= 0.40:
+      route_to:
+        - ethics_risk_monitor
