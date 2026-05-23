@@ -522,6 +522,38 @@ RULE 08 : Do not let engineering language erase the subject.
 ```
 
 ---
+## 8A. World Government Access Mandate
+
+```text
+WORLD GOVERNMENT SCIENCE DEFENSE MANDATE
+Document Class : Restricted Biological Asset Use Agreement
+Archive Node   : OL-AB Punk Record
+Oversight      : Science Defense Division
+Authority Seal : Saint Jaygarcia Saturn
+
+By accessing this archive, the operator acknowledges the following clauses:
+
+CLAUSE 01 : Lineage Factor records are classified as strategic biological assets.
+CLAUSE 02 : Engineered-unit data may not be exported without command authorization.
+CLAUSE 03 : Memory, autonomy, and consent metadata may be redacted by superior order.
+CLAUSE 04 : Artificial ability-transfer logs are restricted to approved research officers.
+CLAUSE 05 : Military deployment status overrides public health classification.
+CLAUSE 06 : Ethics flags are advisory unless elevated to irreversible catastrophe status.
+CLAUSE 07 : Subject personhood claims require review by authorized governing bodies.
+CLAUSE 08 : Unauthorized duplication of this archive is punishable by total access erasure.
+```
+
+Archive-side warning:
+
+```text
+The database can store redacted data.
+The database can store corrupted data.
+The database can store forbidden data.
+
+But the database cannot make an unethical experiment ethical.
+```
+
+---
 
 ## 9. Biological Translation Layer
 
@@ -567,7 +599,7 @@ NO ETHICS    → NO TRUSTWORTHY SCIENCE
 ## 11. Suggested Citation
 
 ```text
-Wicaksono, A. (2026). OL-AB Punk Record: A lineage-factor archive gateway for biotechnology, bioinformatics, and posthumanism science communication. Aether Biomics / OmicsLite educational companion.
+Wicaksono, A., & H.E.L.I.O.S. (2026). OL-AB Punk Record: A lineage-factor archive gateway for biotechnology, bioinformatics, and posthumanism science communication. Prepared for “One Piece & Bioteknologi: Ketika Fiksi Menyentuh Realitas” in collaboration with OmicsLite.
 ```
 
 ---
@@ -590,7 +622,29 @@ No official images, manga panels, anime screenshots, logos, or character artwork
 
 ---
 
-## 13. License
+## 13. Builder Record
+
+```text
+Prepared by:
+Adhityo Wicaksono, Ph.D.
+Molecular Biologist and Bioinformatics Consultant, Aether Biomics
+
+with:
+H.E.L.I.O.S.
+ChatGPT / GPT-5.5 Thinking
+
+Prepared for:
+“One Piece & Bioteknologi: Ketika Fiksi Menyentuh Realitas”
+
+In collaboration with:
+OmicsLite
+```
+
+This repository was prepared as an educational companion for the OmicsLite public science communication event, connecting biotechnology, bioinformatics, lineage-factor interpretation, engineered bodies, artificial abilities, identity, ethics, and posthuman biology.
+
+---
+
+## 14. License
 
 Recommended license:
 
