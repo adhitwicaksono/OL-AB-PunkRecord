@@ -1,0 +1,111 @@
+schema_name: phenotype_ability_archive_schema
+schema_version: 0.1
+archive_node: 03_phenotype_ability_archive
+
+required_record_layers:
+  - observed_trait
+  - ability_record
+  - body_state_event
+  - transfer_event
+  - plausibility_classification
+
+observed_trait_required_fields:
+  - trait_id
+  - subject_id
+  - trait_name
+  - trait_domain
+  - observation_context
+  - confidence_level
+  - linked_marker
+  - ethics_note
+
+ability_record_required_fields:
+  - ability_id
+  - ability_name
+  - ability_class
+  - primary_effect
+  - required_body_system
+  - biological_analogy
+  - plausibility_class
+  - risk_flag
+
+body_state_event_required_fields:
+  - event_id
+  - subject_id
+  - alteration_class
+  - initial_state
+  - altered_state
+  - reversibility
+  - stability
+  - review_status
+
+transfer_event_required_fields:
+  - transfer_id
+  - donor_or_source
+  - recipient_subject
+  - carrier_system
+  - transferred_effect
+  - success_status
+  - instability_flag
+  - ethics_gate
+
+plausibility_required_fields:
+  - classification_id
+  - ability_or_trait_id
+  - mechanism_claim
+  - biological_constraint
+  - plausibility_class
+  - route_to_review
+
+controlled_vocabularies:
+  trait_domain:
+    - morphology
+    - physiology
+    - biomechanics
+    - neural_social
+    - sensory
+    - development
+    - resilience
+    - carrier_system
+    - identity_related
+    - unknown
+
+  ability_class:
+    - zoan_like
+    - paramecia_like
+    - logia_like
+    - transfer_like
+    - cybernetic_like
+    - lineage_resilience_like
+    - sensory_like
+    - unresolved
+
+  alteration_class:
+    - body_form_conversion
+    - tissue_material_shift
+    - elemental_state_claim
+    - neural_behavioral_shift
+    - mechanical_integration
+    - carrier_mediated_expression
+    - regenerative_state
+    - unresolved
+
+  plausibility_class:
+    - plausible
+    - speculative
+    - boundary_case
+    - impossible
+    - unresolved
+
+  review_status:
+    - accepted
+    - review_required
+    - restricted
+    - blocked
+    - sealed
+
+archive_note:
+  - do_not_label_an_ability_as_mechanism
+  - body_state_alteration_requires_physiology_review
+  - transfer_events_require_consent_and_instability_review
+  - impossible_classification_must_not_be_rebranded_as_engineering_success

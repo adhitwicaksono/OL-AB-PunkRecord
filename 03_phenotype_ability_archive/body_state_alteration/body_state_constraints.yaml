@@ -1,0 +1,39 @@
+body_state_constraints_version: 0.1
+
+constraint_classes:
+  developmental_constraint:
+    applies_to:
+      - body_form_conversion
+      - accelerated_growth
+    warning: adult_or_juvenile_body_plan_conversion_requires_developmental_review
+
+  material_constraint:
+    applies_to:
+      - tissue_material_shift
+      - elemental_state_claim
+    warning: tissue_material_properties_have_biophysical_limits
+
+  neural_constraint:
+    applies_to:
+      - neural_behavioral_shift
+      - memory_suppression
+    warning: neural alteration triggers identity review
+
+  integration_constraint:
+    applies_to:
+      - mechanical_integration
+      - carrier_mediated_expression
+    warning: carrier_or_interface_stability_required
+
+blocked_conditions:
+  - alteration_class: elemental_state_claim
+    plausibility_class: impossible
+    route_to: anomaly_review
+
+  - alteration_class: neural_behavioral_shift
+    reversibility: irreversible
+    route_to: ethics_risk_monitor
+
+  - alteration_class: mechanical_integration
+    autonomy_score_below: 0.40
+    route_to: neural_identity_log

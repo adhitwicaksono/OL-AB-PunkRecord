@@ -1,0 +1,45 @@
+ability_class_rules_version: 0.1
+
+classification_routes:
+  zoan_like:
+    route_to:
+      - body_state_alteration
+      - developmental_review
+    warning: body_plan_conversion_exceeds_normal_developmental_constraints
+
+  paramecia_like:
+    route_to:
+      - plausibility_classification
+      - trait_associated_markers
+    warning: effect_specific_mechanism_required
+
+  logia_like:
+    route_to:
+      - plausibility_classification
+      - anomaly_review
+    warning: elemental_body_state_is_outside_biological_mechanism
+
+  transfer_like:
+    route_to:
+      - transfer_events
+      - compatibility_indices
+    warning: carrier_system_instability_must_be_reported
+
+  cybernetic_like:
+    route_to:
+      - neural_identity_log
+      - ethics_risk_monitor
+    warning: command_interface_may_reduce_autonomy
+
+  unresolved:
+    route_to:
+      - sealed_review
+    warning: classifier_failure_detected
+
+critical_escalation:
+  - if ability_class == logia_like:
+      plausibility_class: impossible
+  - if ability_class == cybernetic_like and autonomy_score < 0.40:
+      risk_flag: critical
+  - if carrier_system == blood_based_carrier and instability_flag == high:
+      risk_flag: critical

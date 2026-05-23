@@ -1,0 +1,31 @@
+confidence_rules_version: 0.1
+
+confidence_levels:
+  high:
+    requirements:
+      - repeated_observation
+      - clear_subject_identity
+      - marker_or_system_support
+      - stable_context
+  medium:
+    requirements:
+      - partial_repetition
+      - plausible_marker_link
+      - manageable_uncertainty
+  low:
+    requirements:
+      - single_observation_or_weak_record
+      - unstable_context
+      - uncertain_marker_link
+  unknown:
+    requirements:
+      - sealed_or_corrupted_record
+      - no_reliable_context
+
+escalation:
+  - if trait_domain == identity_related and confidence_level in [medium, high]:
+      route_to: neural_identity_log
+  - if trait_domain == carrier_system:
+      route_to: transfer_events
+  - if ethics_note contains critical:
+      route_to: ethics_risk_monitor

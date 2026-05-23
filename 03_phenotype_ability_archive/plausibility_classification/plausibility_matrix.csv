@@ -1,0 +1,15 @@
+classification_id,ability_or_trait_id,mechanism_claim,biological_constraint,plausibility_class,route_to_review,classifier_note
+PLC_001,ABL_REPULSE,force-like displacement through contact,no known tissue mechanism for long-range repulsive force,boundary_case,anomaly_review;ethics_risk_monitor,catalogue effect but do not claim solved mechanism
+PLC_002,ABL_ELASTIC,whole-body elastomer-like tissue,ECM remodeling cannot explain unlimited deformation,boundary_case,biomechanics_review,requires material-property boundary discussion
+PLC_003,ABL_FIRE,combustion-like body state,living tissue cannot become flame-state organism,impossible,anomaly_review,outside biological mechanism
+PLC_004,ABL_ANIMAL_FORM,adult body-plan conversion,"developmental programs are constrained by timing, tissue architecture, and energy",boundary_case,developmental_review,body-form conversion exceeds known constraints
+PLC_005,ABL_PETRIFY,rapid target petrification-like state,no known remote body-state override mechanism,boundary_case,anomaly_review;ethics_risk_monitor,effect classification only
+PLC_006,ABL_BLADE,body-weapon interface,"tissue hardening possible within limits, weapon-grade interface speculative",speculative,biomechanics_review,body weaponization risk
+PLC_007,ABL_AQUA_FORCE,extreme aquatic force output,enhanced biomechanics plausible but exaggerated output likely unstable,speculative,physiology_review,hydrodynamic trait review
+PLC_008,ABL_THERMAL_RESIST,extreme thermal resilience,stress tolerance plausible but flame-associated resilience exceeds ordinary biology,boundary_case,resilience_review,restricted lineage marker
+PLC_009,ABL_MEMORY_SUPPRESS,memory suppression through interface,"neural modulation plausible, personal identity disruption critical",speculative,neural_identity_log,route before deployment
+PLC_010,ABL_PLATFORM_SYNC,biological-mechanical command synchronization,prosthetic integration plausible; command domination unethical,speculative,neural_identity_log;ethics_risk_monitor,interface risk critical
+PLC_011,ABL_SHADOW_BIND,external shadow-based immobilization,no biological mechanism,impossible,anomaly_review,outside biological mechanism
+PLC_012,ABL_ROOM_FIELD,localized operation field,spatial field control exceeds biology,impossible,anomaly_review,outside biological mechanism
+PLC_013,ABL_GRAVITY_SHIFT,gravity alteration,no biological mechanism,impossible,anomaly_review,outside biological mechanism
+PLC_014,ABL_VOID_UNKNOWN,unresolved effect,sealed or incomplete mechanism,unresolved,sealed_review,classifier failure

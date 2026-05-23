@@ -1,0 +1,9 @@
+ability_class	archive_definition	primary_constraint	review_route
+zoan_like	body-form conversion or animal-like transformation	developmental timing and body-plan stability	body_state_alteration
+paramecia_like	specialized body property or externalized effect	mechanism heterogeneity and effect boundary	plausibility_classification
+logia_like	elemental or material-state body conversion	absence of biological material-state mechanism	plausibility_classification
+transfer_like	ability replication through carrier system	donor-recipient compatibility and instability	transfer_events
+cybernetic_like	biological-mechanical ability integration	neural interface and autonomy disruption	neural_identity_log
+lineage_resilience_like	lineage-associated resilience or extreme physiology	lineage marker restriction and dual-use risk	ethics_risk_monitor
+sensory_like	altered perception or detection range	signal detection and neural interpretation	observed_traits
+unresolved	unresolved class	classifier failure	sealed_review

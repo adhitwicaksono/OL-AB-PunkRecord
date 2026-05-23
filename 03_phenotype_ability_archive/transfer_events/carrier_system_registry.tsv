@@ -1,0 +1,7 @@
+carrier_system	carrier_type	expected_payload	stability	known_risks	review_route
+blood_based_carrier	biological_medium	ability-associated factor	medium	cross-subject instability; identity ambiguity	ethics_risk_monitor
+lineage_factor_carrier	sequence_or_marker_based	trait-associated markers	medium	overinterpretation; developmental disruption	compatibility_indices
+neural_command_interface	cybernetic_interface	command and memory-state modification	high	autonomy loss; identity fracture	neural_identity_log
+carrier_residue	waste_or_byproduct	unstable ability residue	low	contamination; uncontrolled expression	blocked_review
+unstable_body_form_carrier	unknown	body-form switching signal	critical	uncontrolled transformation	blocked_review
+sealed	unknown	unknown	unknown	unknown	sealed_review

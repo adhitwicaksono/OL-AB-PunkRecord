@@ -1,0 +1,7 @@
+event_id	from_state	to_state	transition_type	reversibility	risk
+BSA_001	baseline tissue contact	repulsion-output contact state	carrier_mediated_expression	reversible	critical
+BSA_002	juvenile limb morphology	blade-interface morphology	tissue_material_shift	partially_reversible	high
+BSA_006	biological motor control	command-synchronized platform state	mechanical_integration	irreversible	critical
+BSA_007	autobiographical response	suppressed memory response	neural_behavioral_shift	irreversible_or_unknown	critical
+BSA_010	biological body	combustion-like body state	elemental_state_claim	unknown	blocked
+BSA_012	baseline environment	localized operation field	unresolved	reversible	blocked

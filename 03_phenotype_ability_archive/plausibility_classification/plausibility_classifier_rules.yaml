@@ -1,0 +1,51 @@
+plausibility_classifier_rules_version: 0.1
+
+classification_logic:
+  plausible:
+    conditions:
+      - compatible_with_known_biology
+      - no_major_constraint_violation
+      - repeatable_observation_available
+
+  speculative:
+    conditions:
+      - partial_biological_analogy_exists
+      - mechanism_requires_unknown_intermediate
+      - effect_magnitude_exceeds_normal_range
+
+  boundary_case:
+    conditions:
+      - biological_analogy_exists
+      - effect_requires_extreme_extrapolation
+      - mechanism_not_currently_supported
+
+  impossible:
+    conditions:
+      - no_known_biological_material_or_energy_route
+      - violates basic organismal constraints
+      - belongs to anomaly or physics review
+
+  unresolved:
+    conditions:
+      - sealed_record
+      - corrupted_record
+      - insufficient_observation
+      - classifier_failure
+
+automatic_routes:
+  - if plausibility_class == impossible:
+      route_to: anomaly_review
+      deployment_status: blocked
+
+  - if plausibility_class == boundary_case and risk_flag == critical:
+      route_to:
+        - ethics_risk_monitor
+        - mechanism_review
+
+  - if mechanism_claim contains memory or autonomy:
+      route_to:
+        - neural_identity_log
+        - ethics_risk_monitor
+
+  - if ability_or_trait_id contains VOID:
+      route_to: sealed_review

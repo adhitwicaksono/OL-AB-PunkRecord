@@ -1,0 +1,20 @@
+OL-AB PUNK RECORD // PHENOTYPE & ABILITY ARCHIVE GATE
+
+> request access: 03_phenotype_ability_archive
+> credential layer: public-node
+> gate response: partial access granted
+
+ACTIVE SUBNODES:
+[01] observed_traits
+[02] artificial_abilities
+[03] body_state_alteration
+[04] transfer_events
+[05] plausibility_classification
+
+SYSTEM NOTICE:
+Phenotype records must be interpreted with Lineage Factor Repository, Subject Registry,
+Engineering Pipeline Records, Neural Identity Log, and Ethics & Risk Monitor.
+
+WARNING:
+An ability class is a database label.
+It is not a full biological explanation.

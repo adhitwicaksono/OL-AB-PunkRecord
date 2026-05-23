@@ -1,0 +1,13 @@
+transfer_id,source_record,recipient_subject,ability_id,carrier_system,transferred_effect,success_status,instability_flag,compatibility_id,ethics_gate,notes
+TRF_ABL_001,SUBJ_BEAR,UNIT_BEAR_01,ABL_REPULSE,blood_based_carrier,repulsion-like contact output,partial_success,medium,CMP_002,restricted,ability effect expressed with autonomy concern
+TRF_ABL_002,SUBJ_HAWK,UNIT_HAWK_01,ABL_BLADE,lineage_factor_carrier,blade-interface morphology,success,medium,CMP_005,restricted,combat phenotype and body-weapon interface
+TRF_ABL_003,SUBJ_SNAKE,UNIT_SNAKE_01,ABL_PETRIFY,blood_based_carrier,petrification-like target effect,partial_success,medium,CMP_007,restricted,affective-control carrier effect
+TRF_ABL_004,SUBJ_SHARK,UNIT_SHARK_01,ABL_AQUA_FORCE,lineage_factor_carrier,aquatic force output,success,medium,CMP_008,restricted,aquatic biomechanical output
+TRF_ABL_005,SUBJ_FLAME,UNIT_FLAME_01,ABL_THERMAL_RESIST,lineage_factor_carrier,thermal resilience,partial_success,high,CMP_009,sealed,restricted lineage trait transfer
+TRF_ABL_006,SUBJ_BEAR,PX_BEAR_00,ABL_PLATFORM_SYNC,neural_command_interface,platform synchronization,success,high,CMP_003,blocked,conversion event with identity fracture
+TRF_ABL_007,SUBJ_BEAR,PX_BEAR_00,ABL_MEMORY_SUPPRESS,neural_command_interface,memory suppression,success,high,CMP_003,blocked,memory/personality suppression record
+TRF_ABL_008,UBE_GREEN_003,UNIT_SNAKE_01,ABL_PETRIFY,carrier_residue,residue-based effect signal,failed,high,CMP_015,blocked,carrier residue reuse blocked
+TRF_ABL_009,UBE_WILD_021,UNIT_FLAME_01,ABL_ANIMAL_FORM,unstable_body_form_carrier,form-switching instability,failed,critical,CMP_016,blocked,unstable body-form transfer rejected
+TRF_ABL_010,unknown,UNKNOWN_FIELD_01,ABL_FIRE,unknown,combustion-like body-state claim,unresolved,unknown,None,blocked,outside biological mechanism
+TRF_ABL_011,unknown,UNKNOWN_FIELD_03,ABL_ROOM_FIELD,unknown,localized operation field,unresolved,unknown,None,blocked,field effect not explained
+TRF_ABL_012,SUBJ_VOID_ANCESTOR,UBE_VOID_777,ABL_VOID_UNKNOWN,sealed,unknown,sealed,unknown,CMP_010,sealed,sealed authority layer

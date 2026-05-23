@@ -1,0 +1,6 @@
+archive_node	folder	primary_file	record_count	linked_node	notes
+03	observed_traits	observed_traits_index.csv	18	01_subject_registry;02_lineage_factor_repository	trait observations, measurement proxies, confidence, and risk notes
+03	artificial_abilities	ability_registry.csv	14	02_lineage_factor_repository	ability classes and effect profiles
+03	body_state_alteration	body_state_events.csv	16	04_engineering_pipeline_records	body-form, material-state, tissue-state, and system-state alteration events
+03	transfer_events	ability_transfer_events.csv	12	04_engineering_pipeline_records;06_ethics_risk_monitor	carrier-mediated ability transfer and replication records
+03	plausibility_classification	plausibility_matrix.csv	14	03_phenotype_ability_archive	classification tiers, constraints, and review routing

@@ -1,0 +1,17 @@
+event_id,subject_id,ability_id,alteration_class,initial_state,altered_state,trigger,reversibility,stability,plausibility_class,review_status,notes
+BSA_001,UNIT_BEAR_01,ABL_REPULSE,carrier_mediated_expression,baseline tissue contact,repulsion-output contact state,surface activation,reversible,stable_under_command,boundary_case,restricted,effect recorded through carrier-linked system
+BSA_002,UNIT_HAWK_01,ABL_BLADE,tissue_material_shift,juvenile limb morphology,blade-interface morphology,combat activation,partially_reversible,stable_under_command,speculative,restricted,body-weapon interface
+BSA_003,UNIT_SNAKE_01,ABL_PETRIFY,neural_behavioral_shift,target independent motion,target immobilization or mineral-like state,affective trigger,reversible_unknown,unstable_context,boundary_case,restricted,target-body state effect unresolved
+BSA_004,UNIT_SHARK_01,ABL_AQUA_FORCE,body_form_conversion,baseline movement,aquatic force-output posture,aquatic activation,reversible,stable,speculative,review_required,hydrodynamic force phenotype
+BSA_005,UNIT_FLAME_01,ABL_THERMAL_RESIST,tissue_material_shift,baseline tissue stress,thermal-resilient tissue state,damage exposure,reversible_unknown,stable,boundary_case,sealed,resilience-linked body state
+BSA_006,PX_BEAR_00,ABL_PLATFORM_SYNC,mechanical_integration,biological motor control,command-synchronized platform state,command interface,irreversible,stable_under_command,speculative,blocked,identity fracture risk
+BSA_007,PX_BEAR_00,ABL_MEMORY_SUPPRESS,neural_behavioral_shift,autobiographical response,suppressed memory response,conversion interface,irreversible_or_unknown,stable_under_command,speculative,blocked,memory/personality suppression
+BSA_008,UBE_WILD_021,ABL_ANIMAL_FORM,body_form_conversion,unstable chimera state,alternate body-form state,unknown,reversible_uncontrolled,unstable,unresolved,blocked,escaped unstable form-switching
+BSA_009,UBE_GREEN_003,ABL_REPULSE,carrier_mediated_expression,carrier residue,weak ability residue signal,unknown,unknown,unstable,unresolved,blocked,residue must not be reused
+BSA_010,UNKNOWN_FIELD_01,ABL_FIRE,elemental_state_claim,biological body,combustion-like body state,unknown,unknown,unknown,impossible,blocked,route to anomaly record
+BSA_011,UNKNOWN_FIELD_02,ABL_ELASTIC,tissue_material_shift,baseline tissue mechanics,extreme elastomer-like body state,unknown,reversible,stable_unknown,boundary_case,review_required,extreme ECM-like behavior claimed
+BSA_012,UNKNOWN_FIELD_03,ABL_ROOM_FIELD,unresolved,baseline environment,localized operation field,gesture activation,reversible,stable_unknown,impossible,blocked,spatial field effect beyond biological mechanism
+BSA_013,UNKNOWN_FIELD_04,ABL_GRAVITY_SHIFT,unresolved,baseline gravitational response,altered gravitational response,unknown,reversible_unknown,unknown,impossible,blocked,no biological mechanism
+BSA_014,CLN_BEAR_A01,None,body_form_conversion,normal development,accelerated juvenile body state,growth protocol,irreversible,stable,speculative,review_required,accelerated developmental state
+BSA_015,CLN_FLAME_A01,ABL_THERMAL_RESIST,tissue_material_shift,baseline resilience,enhanced resilience state,restricted protocol,unknown,stable_unknown,boundary_case,sealed,restricted lineage-linked state
+BSA_016,UBE_VOID_777,ABL_VOID_UNKNOWN,unresolved,unknown,unknown,sealed,unknown,unknown,unresolved,sealed,classifier failure

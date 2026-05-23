@@ -1,0 +1,44 @@
+transfer_event_rules_version: 0.1
+
+ethics_gate_rules:
+  - if carrier_system == neural_command_interface:
+      ethics_gate: blocked
+      route_to:
+        - neural_identity_log
+        - ethics_risk_monitor
+
+  - if instability_flag in [high, critical]:
+      ethics_gate: blocked
+      route_to:
+        - compatibility_indices
+        - ethics_risk_monitor
+
+  - if recipient_subject contains UNIT and development_stage == juvenile:
+      ethics_gate: restricted
+      route_to:
+        - ethics_risk_monitor
+
+  - if source_record == unknown:
+      ethics_gate: blocked
+      route_to:
+        - plausibility_classification
+
+  - if carrier_system == sealed:
+      ethics_gate: sealed
+      route_to:
+        - external_rights_notice
+        - sealed_review
+
+record_integrity:
+  required:
+    - source_record
+    - recipient_subject
+    - carrier_system
+    - transferred_effect
+    - instability_flag
+    - ethics_gate
+
+warning:
+  - do_not_reuse_carrier_residue
+  - do_not_transfer_ability_without_subject_record
+  - do_not_separate_transfer_success_from_identity_review
