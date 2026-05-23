@@ -1,0 +1,6 @@
+warning_id,compatibility_id,trigger,severity,message
+INC_001,CMP_003,cyborg_conversion_with_fractured_identity,critical,technical conversion must not override personhood conflict
+INC_002,CMP_009,restricted_lineage_marker,critical,resilience marker transfer locked by authority layer
+INC_003,CMP_011,cross_template_low_similarity,high,cross-template combat transfer rejected
+INC_004,CMP_015,carrier_residue_reuse,critical,carrier residue reuse blocked
+INC_005,CMP_016,unstable_body_form_transfer,critical,body-form instability unacceptable

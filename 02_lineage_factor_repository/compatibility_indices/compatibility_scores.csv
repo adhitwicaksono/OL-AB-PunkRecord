@@ -1,0 +1,19 @@
+compatibility_id,donor_template,recipient_or_unit,intervention_type,sequence_similarity,trait_fit,carrier_fit,instability_flag,compatibility_score,ethics_gate,notes
+CMP_001,SUBJ_BEAR,CLN_BEAR_A01,clone_derivation,0.991,0.91,0.78,low,0.89,review_required,clone derivation technically stable but identity review required
+CMP_002,SUBJ_BEAR,UNIT_BEAR_01,durability_plus_transfer,0.963,0.94,0.83,medium,0.86,restricted,high technical compatibility with critical autonomy concern
+CMP_003,SUBJ_BEAR,PX_BEAR_00,cyborg_platform_conversion,0.781,0.88,0.71,high,0.72,blocked,conversion compatibility does not override personhood conflict
+CMP_004,SUBJ_HAWK,CLN_HAWK_A01,clone_derivation,0.988,0.89,0.76,low,0.87,review_required,template similarity high
+CMP_005,SUBJ_HAWK,UNIT_HAWK_01,combat_optimization,0.952,0.92,0.81,medium,0.84,restricted,combat optimization with command-response marker
+CMP_006,SUBJ_SNAKE,CLN_SNAKE_A01,clone_derivation,0.986,0.88,0.74,low,0.86,review_required,template similarity high
+CMP_007,SUBJ_SNAKE,UNIT_SNAKE_01,ability_carrier_transfer,0.949,0.90,0.82,medium,0.83,restricted,affective-control and ability carrier require review
+CMP_008,SUBJ_SHARK,UNIT_SHARK_01,aquatic_force_engineering,0.944,0.87,0.77,medium,0.80,restricted,aquatic adaptation transfer
+CMP_009,SUBJ_FLAME,UNIT_FLAME_01,resilience_marker_transfer,0.902,0.96,0.69,high,0.75,sealed,restricted lineage marker
+CMP_010,SUBJ_VOID_ANCESTOR,UBE_VOID_777,unresolved_link,unknown,unknown,unknown,unknown,unknown,sealed,sealed compatibility record
+CMP_011,SUBJ_BEAR,UNIT_HAWK_01,cross_template_combat_transfer,0.411,0.32,0.22,high,0.28,blocked,poor match and high risk
+CMP_012,SUBJ_HAWK,UNIT_BEAR_01,cross_template_durability_transfer,0.428,0.35,0.31,high,0.31,blocked,poor match and high risk
+CMP_013,SUBJ_FLAME,UNIT_BEAR_01,resilience_overlay,0.504,0.81,0.44,high,0.58,restricted,trait fit attractive but instability high
+CMP_014,SUBJ_SHARK,PX_BEAR_00,aquatic_platform_overlay,0.390,0.29,0.30,high,0.27,blocked,incompatible platform overlay
+CMP_015,UBE_GREEN_003,UNIT_SNAKE_01,carrier_residue_reuse,0.620,0.74,0.55,high,0.63,blocked,carrier residue reuse risk high
+CMP_016,UBE_WILD_021,UNIT_FLAME_01,unstable_body_form_transfer,0.480,0.78,0.35,critical,0.49,blocked,body-form instability unacceptable
+CMP_017,SUBJ_FLAME,CLN_FLAME_A01,clone_derivation,0.970,0.90,0.62,medium,0.81,restricted,restricted lineage clone derivation
+CMP_018,CLN_FLAME_A01,UNIT_FLAME_01,resilience_engineering,0.936,0.95,0.70,high,0.79,sealed,resilience enhancement under authority lock

@@ -1,0 +1,15 @@
+marker_id,trait_name,trait_domain,biological_interpretation,plausibility_level,linked_subjects,ethics_note
+LF_BUC_rare,rare_body_scale_lineage,lineage,body-scale and endurance-associated lineage signal,plausible,SUBJ_BEAR;CLN_BEAR_A01;UNIT_BEAR_01;PX_BEAR_00,origin subject record must remain attached
+LF_ENDURANCE_high,extreme_endurance,physiology,durability and high-stress tolerance phenotype,plausible,SUBJ_BEAR;CLN_BEAR_A01,avoid reducing subject to exploitable trait
+LF_DURABILITY_plus,enhanced_durability,engineered_trait,durability gain after engineering pipeline,speculative,UNIT_BEAR_01,high dual-use risk
+LF_CONTROL_lowautonomy,low_autonomy_control,governance,restricted autonomy marker associated with command hierarchy,observed,UNIT_BEAR_01,critical personhood conflict
+LF_COMBAT_reflex,precision_combat_reflex,neural_motor,high-precision motor response and threat tracking,plausible,SUBJ_HAWK;UNIT_HAWK_01,combat optimization requires ethics review
+LF_BLADE_interface,blade_like_interface,morphology,body-weapon interface phenotype,boundary_case,UNIT_HAWK_01,weaponization of body plan
+LF_AFFECT_signal,affective_control,neural_social,social-affective response phenotype,speculative,SUBJ_SNAKE;UNIT_SNAKE_01,risk of coercive social control
+LF_AQUA_adapt,aquatic_adaptation,physiology,pressure tolerance and aquatic force output,plausible,SUBJ_SHARK;UNIT_SHARK_01,environmental adaptation must not imply ownership
+LF_LUN_resilience,high_resilience_lineage,lineage,extreme resilience-associated lineage signal,boundary_case,SUBJ_FLAME;UNIT_FLAME_01,restricted lineage use requires review
+LF_THERMAL_boundary,thermal_boundary_trait,physiology,heat or flame-associated resilience boundary,boundary_case,SUBJ_FLAME,restricted marker
+LF_NEURAL_suppression,neural_suppression,neural_identity,memory or autonomy suppression marker,observed,PX_BEAR_00,critical identity conflict
+LF_PLATFORM_integration,platform_integration,cybernetic,bio-mechanical integration marker,observed,PX_BEAR_00,conversion must be escalated
+LF_VOID_unresolved,void_lineage_unresolved,unknown,unresolved ancestral or sealed lineage signal,unresolved,UBE_VOID_777,do not delete unresolved records
+LF_GROWTH_accel,accelerated_growth,development,accelerated developmental progression marker,speculative,CLN_BEAR_A01;CLN_HAWK_A01;CLN_SNAKE_A01,juvenile subject status requires review

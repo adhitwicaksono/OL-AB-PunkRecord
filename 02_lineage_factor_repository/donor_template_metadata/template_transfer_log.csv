@@ -1,0 +1,6 @@
+event_id,template_id,operation,operator_layer,timestamp_status,approval_status,redaction_level,notes
+TRF_001,DNR_BEAR_TO_CLN_A01,template_copy,science_defense_division,archived,approved,partial,clone-derivation event
+TRF_002,DNR_BEAR_TO_UNIT_01,trait_engineering,science_defense_division,archived,approved,high,durability-plus and control-layer event
+TRF_003,DNR_BEAR_TO_PX_00,platform_conversion,world_government_mandate,archived,approved,extreme,conversion event with fractured identity record
+TRF_004,DNR_FLAME_TO_UNIT_01,resilience_marker_transfer,restricted_lineage_office,archived,approved,extreme,resilience marker event
+TRF_005,DNR_VOID_TO_UBE_777,unknown,sealed_authority_layer,sealed,sealed,total,no visible event details

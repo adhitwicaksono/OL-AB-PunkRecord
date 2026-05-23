@@ -1,0 +1,33 @@
+marker_rules_version: 0.1
+
+escalation_rules:
+  - rule_id: TM_RULE_001
+    condition: marker_id == LF_CONTROL_lowautonomy
+    action: escalate_to_ethics_risk_monitor
+    risk: critical
+
+  - rule_id: TM_RULE_002
+    condition: marker_id == LF_NEURAL_suppression
+    action: require_neural_identity_review
+    risk: critical
+
+  - rule_id: TM_RULE_003
+    condition: marker_id == LF_GROWTH_accel and development_stage == juvenile
+    action: require_juvenile_subject_review
+    risk: high
+
+  - rule_id: TM_RULE_004
+    condition: marker_id == LF_PLATFORM_integration
+    action: require_cyborg_conversion_review
+    risk: critical
+
+  - rule_id: TM_RULE_005
+    condition: marker_id == LF_VOID_unresolved
+    action: seal_or_route_to_unknown_entity_review
+    risk: unknown
+
+interpretation_limits:
+  - trait markers are not deterministic proof
+  - marker absence does not mean trait absence
+  - marker presence does not erase consent requirements
+  - marker confidence must be reported with every conclusion

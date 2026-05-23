@@ -1,0 +1,98 @@
+schema_name: lineage_factor_repository_schema
+schema_version: 0.1
+archive_node: 02_lineage_factor_repository
+
+required_record_layers:
+  - sequence_record
+  - variant_profile
+  - donor_template_metadata
+  - trait_marker_annotation
+  - compatibility_index
+
+sequence_record_required_fields:
+  - record_id
+  - subject_id
+  - record_class
+  - sequence_status
+  - repository_access
+  - linked_subject_registry_id
+
+variant_profile_required_fields:
+  - marker_id
+  - chromosome_or_segment
+  - position
+  - reference_state
+  - altered_state
+  - marker_class
+  - linked_trait
+  - confidence_level
+
+donor_template_required_fields:
+  - template_id
+  - donor_subject_id
+  - derivative_subject_id
+  - derivative_type
+  - transfer_status
+  - consent_status
+  - governance_lock
+
+trait_marker_required_fields:
+  - marker_id
+  - trait_name
+  - trait_domain
+  - biological_interpretation
+  - plausibility_level
+  - ethics_note
+
+compatibility_required_fields:
+  - compatibility_id
+  - donor_template
+  - recipient_or_unit
+  - intervention_type
+  - compatibility_score
+  - instability_flag
+  - ethics_gate
+
+controlled_vocabularies:
+  record_class:
+    - baseline
+    - clone_derived
+    - engineered
+    - cyborg_converted
+    - unidentified
+    - sealed
+
+  sequence_status:
+    - complete
+    - partial
+    - corrupted
+    - sealed
+    - unresolved
+
+  marker_class:
+    - lineage_marker
+    - trait_marker
+    - carrier_marker
+    - autonomy_control_marker
+    - instability_marker
+    - sealed_marker
+
+  plausibility_level:
+    - observed
+    - plausible
+    - speculative
+    - boundary_case
+    - impossible
+    - unresolved
+
+  ethics_gate:
+    - pass
+    - review_required
+    - restricted
+    - blocked
+    - sealed
+
+archive_note:
+  - do_not_treat_sequence_identity_as_personal_identity
+  - high_compatibility_does_not_override_consent
+  - unknown_variant_function_must_not_be_overinterpreted

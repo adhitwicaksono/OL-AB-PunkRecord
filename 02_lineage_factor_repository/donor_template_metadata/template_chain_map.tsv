@@ -1,0 +1,6 @@
+template_chain	origin_subject	derivative_1	derivative_2	derivative_3	risk_summary
+BEAR_CHAIN	SUBJ_BEAR	CLN_BEAR_A01	UNIT_BEAR_01	PX_BEAR_00	critical: clone, engineered unit, and cyborg conversion all linked to same origin
+HAWK_CHAIN	SUBJ_HAWK	CLN_HAWK_A01	UNIT_HAWK_01	None	high: combat optimization and restricted autonomy
+SNAKE_CHAIN	SUBJ_SNAKE	CLN_SNAKE_A01	UNIT_SNAKE_01	None	high: affective phenotype and ability carrier
+FLAME_CHAIN	SUBJ_FLAME	CLN_FLAME_A01	UNIT_FLAME_01	None	critical: restricted lineage marker transfer
+VOID_CHAIN	SUBJ_VOID_ANCESTOR	UBE_VOID_777	None	None	unknown: sealed lineage relationship

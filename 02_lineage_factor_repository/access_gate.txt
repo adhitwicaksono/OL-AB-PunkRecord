@@ -1,0 +1,21 @@
+OL-AB PUNK RECORD // LINEAGE FACTOR REPOSITORY GATE
+
+> request access: 02_lineage_factor_repository
+> credential layer: public-node
+> gate response: partial access granted
+
+ACTIVE SUBNODES:
+[01] sequence_records
+[02] variant_profiles
+[03] donor_template_metadata
+[04] trait_associated_markers
+[05] compatibility_indices
+
+SYSTEM NOTICE:
+Lineage Factor data must be interpreted with Subject Registry, Neural Identity Log,
+Engineering Pipeline Records, and Ethics & Risk Monitor.
+
+WARNING:
+High compatibility does not equal ethical clearance.
+Low divergence does not equal same person.
+Trait markers are not destiny.

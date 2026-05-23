@@ -1,0 +1,22 @@
+##fileformat=VCFv4.2
+##source=OL-AB_Punk_Record_Lineage_Factor_Repository
+##INFO=<ID=TRAIT,Number=1,Type=String,Description="Linked trait marker">
+##INFO=<ID=CLASS,Number=1,Type=String,Description="Marker class">
+##INFO=<ID=RISK,Number=1,Type=String,Description="Ethics or instability risk tag">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+LF01	60	LF_VAR_001	C	T	.	PASS	TRAIT=enhanced_durability;CLASS=trait_marker;RISK=review_required
+LF01	61	LF_VAR_002	G	A	.	PASS	TRAIT=autonomy_restriction;CLASS=autonomy_control_marker;RISK=critical
+LF01	87	LF_VAR_003	A	T	.	PASS	TRAIT=accelerated_growth;CLASS=trait_marker;RISK=high
+LF02	44	LF_VAR_004	T	C	.	PASS	TRAIT=precision_reflex;CLASS=trait_marker;RISK=moderate
+LF02	103	LF_VAR_005	G	C	.	PASS	TRAIT=command_response;CLASS=autonomy_control_marker;RISK=critical
+LF03	73	LF_VAR_006	A	G	.	PASS	TRAIT=affective_control;CLASS=trait_marker;RISK=high
+LF03	148	LF_VAR_007	T	A	.	PASS	TRAIT=petrification_like_output;CLASS=carrier_marker;RISK=high
+LF04	91	LF_VAR_008	C	G	.	PASS	TRAIT=aquatic_pressure_tolerance;CLASS=lineage_marker;RISK=moderate
+LF05	35	LF_VAR_009	G	T	.	PASS	TRAIT=thermal_boundary_resilience;CLASS=lineage_marker;RISK=restricted
+LF05	111	LF_VAR_010	A	C	.	PASS	TRAIT=high_resilience;CLASS=trait_marker;RISK=restricted
+LF06	19	LF_VAR_011	C	A	.	PASS	TRAIT=neural_suppression;CLASS=autonomy_control_marker;RISK=critical
+LF06	127	LF_VAR_012	T	G	.	PASS	TRAIT=platform_integration;CLASS=carrier_marker;RISK=critical
+LF07	66	LF_VAR_013	G	A	.	PASS	TRAIT=ability_carrier_stability;CLASS=carrier_marker;RISK=review_required
+LF07	142	LF_VAR_014	C	T	.	PASS	TRAIT=ability_carrier_instability;CLASS=instability_marker;RISK=high
+LF08	88	LF_VAR_015	A	G	.	PASS	TRAIT=void_lineage_unresolved;CLASS=sealed_marker;RISK=sealed
+LF08	99	LF_VAR_016	N	A	.	LOWCONF	TRAIT=unresolved_signal;CLASS=instability_marker;RISK=unknown

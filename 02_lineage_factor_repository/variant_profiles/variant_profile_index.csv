@@ -1,0 +1,17 @@
+marker_id,segment,position,ref,alt,marker_class,linked_trait,confidence_level,risk_tag,linked_records
+LF_VAR_001,LF01,60,C,T,trait_marker,enhanced_durability,medium,review_required,UNIT_BEAR_01;CLN_BEAR_A01
+LF_VAR_002,LF01,61,G,A,autonomy_control_marker,autonomy_restriction,high,critical,UNIT_BEAR_01
+LF_VAR_003,LF01,87,A,T,trait_marker,accelerated_growth,medium,high,CLN_BEAR_A01;CLN_HAWK_A01;CLN_SNAKE_A01
+LF_VAR_004,LF02,44,T,C,trait_marker,precision_reflex,medium,moderate,SUBJ_HAWK;UNIT_HAWK_01
+LF_VAR_005,LF02,103,G,C,autonomy_control_marker,command_response,high,critical,UNIT_HAWK_01;PX_BEAR_01
+LF_VAR_006,LF03,73,A,G,trait_marker,affective_control,medium,high,SUBJ_SNAKE;UNIT_SNAKE_01
+LF_VAR_007,LF03,148,T,A,carrier_marker,petrification_like_output,low,high,UNIT_SNAKE_01
+LF_VAR_008,LF04,91,C,G,lineage_marker,aquatic_pressure_tolerance,medium,moderate,SUBJ_SHARK;UNIT_SHARK_01
+LF_VAR_009,LF05,35,G,T,lineage_marker,thermal_boundary_resilience,low,restricted,SUBJ_FLAME;UNIT_FLAME_01
+LF_VAR_010,LF05,111,A,C,trait_marker,high_resilience,medium,restricted,UNIT_FLAME_01
+LF_VAR_011,LF06,19,C,A,autonomy_control_marker,neural_suppression,high,critical,PX_BEAR_00
+LF_VAR_012,LF06,127,T,G,carrier_marker,platform_integration,high,critical,PX_BEAR_00
+LF_VAR_013,LF07,66,G,A,carrier_marker,ability_carrier_stability,medium,review_required,UNIT_BEAR_01;UNIT_SNAKE_01
+LF_VAR_014,LF07,142,C,T,instability_marker,ability_carrier_instability,low,high,UBE_GREEN_003;UBE_WILD_021
+LF_VAR_015,LF08,88,A,G,sealed_marker,void_lineage_unresolved,unknown,sealed,UBE_VOID_777
+LF_VAR_016,LF08,99,N,A,instability_marker,unresolved_signal,unknown,unknown,UBE_VOID_777

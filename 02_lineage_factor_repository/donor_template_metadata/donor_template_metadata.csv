@@ -1,0 +1,12 @@
+template_id,donor_subject_id,derivative_subject_id,derivative_type,transfer_status,template_similarity,consent_status,governance_lock,risk_level,notes
+DNR_BEAR_TO_CLN_A01,SUBJ_BEAR,CLN_BEAR_A01,clone_derivation,completed,0.991,not_applicable_or_unknown,restricted,high,template-derived clone record
+DNR_BEAR_TO_UNIT_01,SUBJ_BEAR,UNIT_BEAR_01,engineered_unit_derivation,completed,0.963,not_applicable_or_unknown,restricted,critical,template record linked to durability and autonomy-control markers
+DNR_BEAR_TO_PX_00,SUBJ_BEAR,PX_BEAR_00,cyborg_conversion,completed,0.781,coerced_or_unclear,restricted,critical,original subject converted into platform architecture
+DNR_HAWK_TO_CLN_A01,SUBJ_HAWK,CLN_HAWK_A01,clone_derivation,completed,0.988,not_applicable_or_unknown,limited,high,combat template clone record
+DNR_HAWK_TO_UNIT_01,SUBJ_HAWK,UNIT_HAWK_01,engineered_unit_derivation,completed,0.952,not_applicable_or_unknown,restricted,high,combat-optimized engineered unit
+DNR_SNAKE_TO_CLN_A01,SUBJ_SNAKE,CLN_SNAKE_A01,clone_derivation,completed,0.986,not_applicable_or_unknown,limited,high,affective-control template clone record
+DNR_SNAKE_TO_UNIT_01,SUBJ_SNAKE,UNIT_SNAKE_01,engineered_unit_derivation,completed,0.949,not_applicable_or_unknown,restricted,high,ability-carrier linked engineered unit
+DNR_SHARK_TO_UNIT_01,SUBJ_SHARK,UNIT_SHARK_01,engineered_unit_derivation,completed,0.944,not_applicable_or_unknown,restricted,high,aquatic biomechanical engineered unit
+DNR_FLAME_TO_UNIT_01,SUBJ_FLAME,UNIT_FLAME_01,lineage_trait_transfer,completed,0.902,unclear,restricted,critical,restricted resilience marker transfer
+DNR_VOID_TO_UBE_777,SUBJ_VOID_ANCESTOR,UBE_VOID_777,unresolved_link,sealed,unknown,impossible_to_determine,sealed,unknown,sealed donor relationship
+DNR_UNKNOWN_TO_GHOST,unknown,UNIT_GHOST_00,orphaned_derivation,unknown,unknown,unknown,unknown,unknown,orphan record without verified donor template

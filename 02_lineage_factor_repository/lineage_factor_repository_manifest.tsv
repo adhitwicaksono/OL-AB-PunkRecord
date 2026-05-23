@@ -1,0 +1,6 @@
+repository_node	folder	primary_file	record_count	linked_node	notes
+02	sequence_records	lineage_factor_sequences.fasta	10	01_subject_registry	sequence-like records for original subjects, clone-derived subjects, engineered units, and unknown entities
+02	variant_profiles	lineage_factor_variants.vcf	16	03_phenotype_ability_archive	variant-like markers linked to traits, autonomy restriction, carrier systems, and lineage stability
+02	donor_template_metadata	donor_template_metadata.csv	11	01_subject_registry	template source, derivative records, transfer permission, and governance lock fields
+02	trait_associated_markers	trait_marker_catalog.csv	14	03_phenotype_ability_archive	marker-to-trait interpretation and plausibility tiers
+02	compatibility_indices	compatibility_scores.csv	18	04_engineering_pipeline_records	template compatibility for cloning, ability transfer, cybernetic conversion, and resilience augmentation
